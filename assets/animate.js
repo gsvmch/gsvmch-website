@@ -19,7 +19,7 @@
 
   /* ---------- Scroll reveal ---------- */
   var SELECTOR = 'main section, .card, .shortcut, .spec-card, ' +
-    '.gallery figure, .stats-box, .stats-band, .notice-box, ' +
+    '.gallery figure, .founder-strip, .stats-band, .notice-box, ' +
     '.about-wrap > *, .bottom3 > *, form, .table-wrap, .empty';
   var revealEls = Array.prototype.slice.call(document.querySelectorAll(SELECTOR));
 
@@ -54,7 +54,7 @@
 
   /* ---------- Stats count-up ---------- */
   var statEls = Array.prototype.slice.call(
-    document.querySelectorAll('.stats-band .stat b, .stats-box .stat b'));
+    document.querySelectorAll('.stats-band .stat b'));
 
   function parseStat(el) {
     var text = el.textContent || '';

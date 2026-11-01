@@ -123,6 +123,8 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
   .footer-inner{grid-template-columns:1fr}
 }
 @media(max-width:560px){
+  .founder-card{grid-template-columns:1fr}
+  .founder-photo{max-width:260px}
   .grid,.grid2,.grid4,.shortcuts,.gallery,.steps{grid-template-columns:1fr}
   .hero img{height:240px}
   .hero-overlay{position:static;background:var(--navy)}
@@ -137,10 +139,18 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
 .section-head h2{border-bottom:0;padding-bottom:0}
 .section-head h2::after{content:"";display:block;width:64px;height:3px;background:var(--teal);margin:.5rem auto 0;border-radius:2px}
 .eyebrow{color:var(--teal);font-weight:700;letter-spacing:.04em;margin:0}
-.about-wrap{display:grid;grid-template-columns:1fr 1.3fr .8fr;gap:1.4rem;align-items:start}
+.about-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:1.6rem;align-items:start}
 .about-photo{border-radius:var(--radius);width:100%;height:100%;min-height:280px;object-fit:cover;box-shadow:var(--shadow)}
 .about-text h2{border-bottom:0;padding-bottom:0}
-.stats-box{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem;display:grid;gap:.9rem;box-shadow:var(--shadow)}
+.founder-strip{display:flex;gap:1.1rem;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.2rem;margin-top:1.4rem;box-shadow:var(--shadow)}
+.founder-strip img{width:96px;height:110px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.founder-strip h3{margin:.1rem 0 .2rem;font-size:1.15rem}
+.founder-strip p{margin:.15rem 0}
+.founder-card{display:grid;grid-template-columns:240px 1fr;gap:1.4rem;align-items:start}
+.founder-photo{width:100%;border-radius:var(--radius);box-shadow:var(--shadow)}
+.founder-card h3{margin-top:0;font-size:1.35rem}
+.founder-role{font-weight:700;color:var(--blue);margin:.1rem 0}
+.founder-dates{color:var(--muted);font-weight:600;margin:.1rem 0 .6rem}
 .stats-box .stat,.stats-band .stat{display:grid;gap:.1rem;text-align:center}
 .stats-box .stat b,.stats-band .stat b{font-size:1.7rem;color:var(--blue);line-height:1.1}
 .stats-box .stat span,.stats-band .stat span{font-size:.92rem;color:var(--muted);font-weight:600}
