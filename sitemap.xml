@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://gsvmch.pages.dev/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/about.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/departments.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/department-emergency.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/doctors.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/services.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/diagnostics.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/appointments.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/patient-guide.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/notices.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/gallery.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://gsvmch.pages.dev/pages/contact.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
