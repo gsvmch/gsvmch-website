@@ -20,20 +20,28 @@
 <section><h2>Doctors &amp; Consultants — Doctor o Consultant</h2>
 <div class="card">
 <label>Doctor khujun<input id="docSearch" type="search" placeholder="Doctor er nam likhun"></label>
-<label>Bibhag<select id="docDept"><option value="all">Sob bibhag</option><option value="Emergency">Emergency</option><option value="Surgery">Surgery</option><option value="Medicine">Medicine</option><option value="Gyne and Obs">Gyne and Obs</option><option value="Paediatric Surgery">Paediatric Surgery</option><option value="Pediatric">Pediatric</option><option value="ENT">ENT</option><option value="Skin">Skin</option><option value="Eye">Eye</option><option value="Orthopedics">Orthopedics</option><option value="Anesthesia">Anesthesia</option><option value="Radiology">Radiology</option><option value="Psychiatry">Psychiatry</option></select></label>
+<label>Bibhag<select id="docDept"><option value="all">Sob bibhag</option><option value="Emergency">Emergency</option><option value="Surgery">Surgery</option><option value="Medicine">Medicine</option><option value="Gyne and Obs">Gyne and Obs</option><option value="Paediatric Surgery">Paediatric Surgery</option><option value="Pediatric">Pediatric</option><option value="ENT">ENT</option><option value="Skin">Skin</option><option value="Eye">Eye</option><option value="Orthopedics">Orthopedics</option><option value="Anesthesia">Anesthesia</option><option value="Radiology">Radiology</option><option value="Psychiatry">Psychiatry</option><option value="Nephrology">Nephrology</option></select></label>
 <p id="docCount" class="muted"></p>
 </div></section>
-<section><div class="empty" id="docEmpty"><p><b>Ekhono kono doctor er talika prokash hoyni.</b></p><p>Hospital theke chudanto talika pawar por ekhane doctor er chobi, nam, podobi, degree, bisesoggota, bibhag, ar chamber din o somoy bosbe.</p></div></section>
+<section><div class="grid" id="docGrid">
+<article class="card doctor" data-name="masrura jabin" data-dept="Nephrology"><img src="../assets/doctors/masrura-jabin.jpg" alt="Dr Masrura Jabin" style="width:100%;max-width:220px;border-radius:12px"><h3>Dr Masrura Jabin</h3><p><b>Bibhag:</b> Nephrology (Medicine and Nephrology)<br><b>Podobi:</b> Associate Professor and Department Head<br><b>Degree:</b> MBBS, FCPS (Medicine), MD (Nephrology)<br><b>Chamber:</b> Gonoshasthaya Samaj Vittik Medical College Hospital, Savar; echarao Gonoshasthaya Nagar Hospital, Dhanmondi<br><b>Chamber din/somoy:</b> Hospital theke janano hobe</p></article>
+<article class="card doctor" data-name="najibul islam" data-dept="Surgery"><div class="avatar" style="width:120px;height:120px;border-radius:50%;background:#0876b9;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:800">NI</div><h3>Dr Najibul Islam</h3><p><b>Bibhag:</b> Surgery<br><b>Podobi:</b> Associate Professor<br><b>Degree:</b> Hospital theke janano hobe<br><b>Chamber:</b> Gonoshasthaya Samaj Vittik Medical College Hospital, Savar; echarao Gonoshasthaya Nagar Hospital, Dhanmondi<br><b>Chamber din/somoy:</b> Hospital theke janano hobe</p><p class="muted small">Chobi: GNH site e ei doctor er asol chobi nei, tai chobi pore bosbe.</p></article>
+<article class="card doctor" data-name="gour gopal saha" data-dept="Eye"><div class="avatar" style="width:120px;height:120px;border-radius:50%;background:#0876b9;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:800">GS</div><h3>Dr Gour Gopal Saha</h3><p><b>Bibhag:</b> Eye<br><b>Podobi:</b> Associate Professor<br><b>Degree:</b> Hospital theke janano hobe<br><b>Chamber:</b> Gonoshasthaya Samaj Vittik Medical College Hospital, Savar; echarao Gonoshasthaya Nagar Hospital, Dhanmondi<br><b>Chamber din/somoy:</b> Hospital theke janano hobe</p><p class="muted small">Chobi: GNH site e ei doctor er asol chobi nei, tai chobi pore bosbe.</p></article>
+</div><div class="empty" id="docEmpty" style="display:none"><p><b>Khuje pawa jayni.</b></p></div></section>
 
 <script>
 function filterDoctors(){
   var q = document.getElementById('docSearch').value.toLowerCase();
   var d = document.getElementById('docDept').value;
-  var msg = document.getElementById('docEmpty');
-  var count = document.getElementById('docCount');
-  // Doctor list is empty until the hospital confirms it; filtering therefore always shows the empty message.
-  count.textContent = '0 jon doctor talikabhukto';
-  msg.style.display = 'block';
+  var cards = document.querySelectorAll('.doctor');
+  var n = 0;
+  cards.forEach(function(c){
+    var ok = (d==='all' || c.dataset.dept===d) && c.dataset.name.indexOf(q) !== -1;
+    c.style.display = ok ? '' : 'none';
+    if(ok) n++;
+  });
+  document.getElementById('docCount').textContent = n + ' jon doctor talikabhukto';
+  document.getElementById('docEmpty').style.display = n===0 ? 'block' : 'none';
 }
 document.getElementById('docSearch').addEventListener('input', filterDoctors);
 document.getElementById('docDept').addEventListener('change', filterDoctors);
