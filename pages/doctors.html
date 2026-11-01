@@ -2,32 +2,35 @@
 <html lang="bn"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Doctors & Consultants — Gonoshasthaya Samaj Vittik Medical College Hospital (GSVMCH)</title>
-<meta name="description" content="GSVMCH doctor directory.">
+<meta name="description" content="জিএসভিএমসিএইচ চিকিৎসক তালিকা।">
 <meta property="og:title" content="Doctors & Consultants — GSVMCH">
-<meta property="og:description" content="GSVMCH doctor directory.">
+<meta property="og:description" content="জিএসভিএমসিএইচ চিকিৎসক তালিকা।">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://gsvmch.pages.dev/">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-<div class="topbar">Gonoshasthaya Samaj Vittik Medical College Hospital — Savar, Dhaka <span>| 1972 sal theke, 250-bed hospital</span></div>
+<div class="topbar"><div class="topbar-inner">
+<span data-i18n="top.addr">📍 মির্জানগর, আশুলিয়া, সাভার, ঢাকা-১৩৪৪</span>
+<span class="topbar-right"><span data-i18n="top.emergency">জরুরি: [নিশ্চিত করা হয়নি]</span> <span class="topbar-sep">|</span> <a href="../pages/notices.html" data-i18n="top.notice">নোটিশ</a> <span class="topbar-sep">|</span> <a href="../pages/gallery.html" data-i18n="top.gallery">গ্যালারি</a> <span class="topbar-sep">|</span> <span class="lang-toggle"><button type="button" class="lang-btn active" data-lang="bn">বাংলা</button><button type="button" class="lang-btn" data-lang="en">English</button></span></span>
+</div></div>
 <header class="site"><div class="header-inner">
-<a class="brand" href="../index.html"><img src="../assets/logo.jpg" alt="Gonoshasthaya Samaj Vittik Medical College logo"><span><b>Gonoshasthaya Samaj Vittik Medical College Hospital</b><small>GSVMCH — Savar, Dhaka</small></span></a>
-<nav class="main"><a href="../index.html">Home</a><a href="../pages/about.html">About</a><a href="../pages/departments.html">Bibhag</a><a href="../pages/doctors.html" class="active">Doctor</a><a href="../pages/services.html">Seba</a><a href="../pages/diagnostics.html">Diagnostic</a><a href="../pages/appointments.html">Appointment</a><a href="../pages/patient-guide.html">Patient Guide</a><a href="../pages/notices.html">Notice</a><a href="../pages/gallery.html">Gallery</a><a href="../pages/contact.html">Jogajog</a></nav>
+<a class="brand" href="../index.html"><img src="../assets/logo.jpg" alt="Gonoshasthaya Samaj Vittik Medical College logo"><span><b data-i18n="brand.name">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল</b><small data-i18n="brand.sub">জিএসভিএমসিএইচ — সাভার, ঢাকা</small></span></a>
+<nav class="main"><a href="../index.html" data-i18n="nav.home">হোম</a><a href="about.html" data-i18n="nav.about">আমাদের সম্পর্কে</a><a href="departments.html" data-i18n="nav.departments">বিভাগসমূহ</a><a href="doctors.html" class="active" data-i18n="nav.doctors">চিকিৎসকগণ</a><a href="services.html" data-i18n="nav.services">সেবাসমূহ</a><a href="diagnostics.html" data-i18n="nav.diagnostics">ডায়াগনস্টিক</a><a href="appointments.html" data-i18n="nav.appointments">অ্যাপয়েন্টমেন্ট</a><a href="patient-guide.html" data-i18n="nav.guide">রোগীর নির্দেশিকা</a><a href="notices.html" data-i18n="nav.notice">নোটিশ</a><a href="gallery.html" data-i18n="nav.gallery">গ্যালারি</a><a href="contact.html" data-i18n="nav.contact">যোগাযোগ</a></nav>
 </div></header>
 <main>
 
-<section><h2>Doctors &amp; Consultants — Doctor o Consultant</h2>
+<section><h2 data-i18n="doctors.h2page">চিকিৎসক ও পরামর্শক</h2>
 <div class="card">
-<label>Doctor khujun<input id="docSearch" type="search" placeholder="Doctor er nam likhun"></label>
-<label>Bibhag<select id="docDept"><option value="all">Sob bibhag</option><option value="Emergency">Emergency</option><option value="Surgery">Surgery</option><option value="Medicine">Medicine</option><option value="Gyne and Obs">Gyne and Obs</option><option value="Paediatric Surgery">Paediatric Surgery</option><option value="Pediatric">Pediatric</option><option value="ENT">ENT</option><option value="Skin">Skin</option><option value="Eye">Eye</option><option value="Orthopedics">Orthopedics</option><option value="Anesthesia">Anesthesia</option><option value="Radiology">Radiology</option><option value="Psychiatry">Psychiatry</option><option value="Nephrology">Nephrology</option></select></label>
+<label><span data-i18n="doctors.search_label">চিকিৎসক খুঁজুন</span><input id="docSearch" type="search" data-i18n-ph="doctors.search_ph" placeholder="চিকিৎসকের নাম লিখুন"></label>
+<label><span data-i18n="doctors.dept_label">বিভাগ</span><select id="docDept"><option value="all" data-i18n="doctors.all_depts">সব বিভাগ</option><option value="Emergency" data-dept="Emergency">Emergency</option><option value="Surgery" data-dept="Surgery">Surgery</option><option value="Medicine" data-dept="Medicine">Medicine</option><option value="Gyne and Obs" data-dept="Gyne and Obs">Gyne and Obs</option><option value="Paediatric Surgery" data-dept="Paediatric Surgery">Paediatric Surgery</option><option value="Pediatric" data-dept="Pediatric">Pediatric</option><option value="ENT" data-dept="ENT">ENT</option><option value="Skin" data-dept="Skin">Skin</option><option value="Eye" data-dept="Eye">Eye</option><option value="Orthopedics" data-dept="Orthopedics">Orthopedics</option><option value="Anesthesia" data-dept="Anesthesia">Anesthesia</option><option value="Radiology" data-dept="Radiology">Radiology</option><option value="Psychiatry" data-dept="Psychiatry">Psychiatry</option></select></label>
 <p id="docCount" class="muted"></p>
 </div></section>
 <section><div class="grid" id="docGrid">
-<article class="card doctor" data-name="masrura jabin" data-dept="Medicine"><img src="../assets/doctors/masrura-jabin.jpg" alt="Dr Masrura Jabin" style="width:100%;max-width:220px;border-radius:12px"><h3>Dr Masrura Jabin</h3><p><b>Bibhag:</b> Medicine<br><b>Podobi:</b> Associate Professor and Head, Department of Medicine<br><b>Bisesoggota:</b> Nephrology<br><b>Degree:</b> MBBS, FCPS (Medicine), MD (Nephrology)<br><b>Chamber:</b> Gonoshasthaya Samaj Vittik Medical College Hospital, Savar; echarao Gonoshasthaya Nagar Hospital, Dhanmondi<br><b>Chamber din/somoy:</b> Hospital theke janano hobe</p></article>
-<article class="card doctor" data-name="najibul islam" data-dept="Surgery"><div class="avatar" style="width:120px;height:120px;border-radius:50%;background:#0876b9;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:800">NI</div><h3>Dr Najibul Islam</h3><p><b>Bibhag:</b> Surgery<br><b>Podobi:</b> Associate Professor<br><b>Degree:</b> Hospital theke janano hobe<br><b>Chamber:</b> Gonoshasthaya Samaj Vittik Medical College Hospital, Savar; echarao Gonoshasthaya Nagar Hospital, Dhanmondi<br><b>Chamber din/somoy:</b> Hospital theke janano hobe</p><p class="muted small">Chobi: GNH site e ei doctor er asol chobi nei, tai chobi pore bosbe.</p></article>
-<article class="card doctor" data-name="gour gopal saha" data-dept="Eye"><div class="avatar" style="width:120px;height:120px;border-radius:50%;background:#0876b9;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:800">GS</div><h3>Dr Gour Gopal Saha</h3><p><b>Bibhag:</b> Eye<br><b>Podobi:</b> Associate Professor<br><b>Degree:</b> Hospital theke janano hobe<br><b>Chamber:</b> Gonoshasthaya Samaj Vittik Medical College Hospital, Savar; echarao Gonoshasthaya Nagar Hospital, Dhanmondi<br><b>Chamber din/somoy:</b> Hospital theke janano hobe</p><p class="muted small">Chobi: GNH site e ei doctor er asol chobi nei, tai chobi pore bosbe.</p></article>
-</div><div class="empty" id="docEmpty" style="display:none"><p><b>Khuje pawa jayni.</b></p></div></section>
+<article class="card doctor" data-name="masrura jabin" data-dept="Medicine"><img src="../assets/doctors/masrura-jabin.jpg" alt="Dr Masrura Jabin" style="width:100%;max-width:220px;border-radius:12px"><h3>Dr Masrura Jabin</h3><p><b data-i18n="doc.dept">বিভাগ:</b> <span data-dept="Medicine">Medicine</span><br><b data-i18n="doc.designation">পদবি:</b> <span data-i18n="doc.masrura_desig">সহযোগী অধ্যাপক ও বিভাগীয় প্রধান, মেডিসিন বিভাগ</span><br><b data-i18n="doc.spec">বিশেষজ্ঞতা:</b> <span data-dept="Nephrology">Nephrology</span><br><b data-i18n="doc.degree">ডিগ্রি:</b> MBBS, FCPS (Medicine), MD (Nephrology)<br><b data-i18n="doc.chamber">চেম্বার:</b> <span data-i18n-html="doc.chamber_text">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল, সাভার; এছাড়াও গণস্বাস্থ্য নগর হাসপাতাল, ধানমন্ডি</span><br><b data-i18n="doc.chamber_time">চেম্বারের দিন ও সময়:</b> <span data-i18n="doc.tba">হাসপাতাল থেকে জানানো হবে</span></p></article>
+<article class="card doctor" data-name="najibul islam" data-dept="Surgery"><div class="avatar" style="width:120px;height:120px;border-radius:50%;background:#0876b9;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:800">NI</div><h3>Dr Najibul Islam</h3><p><b data-i18n="doc.dept">বিভাগ:</b> <span data-dept="Surgery">Surgery</span><br><b data-i18n="doc.designation">পদবি:</b> <span data-i18n="doc.assoc_prof">সহযোগী অধ্যাপক</span><br><b data-i18n="doc.degree">ডিগ্রি:</b> <span data-i18n="doc.tba">হাসপাতাল থেকে জানানো হবে</span><br><b data-i18n="doc.chamber">চেম্বার:</b> <span data-i18n-html="doc.chamber_text">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল, সাভার; এছাড়াও গণস্বাস্থ্য নগর হাসপাতাল, ধানমন্ডি</span><br><b data-i18n="doc.chamber_time">চেম্বারের দিন ও সময়:</b> <span data-i18n="doc.tba">হাসপাতাল থেকে জানানো হবে</span></p><p class="muted small" data-i18n="doc.photo_note">ছবি: জিএনএইচ সাইটে এই চিকিৎসকের আসল ছবি নেই, তাই ছবি পরে বসবে।</p></article>
+<article class="card doctor" data-name="gour gopal saha" data-dept="Eye"><div class="avatar" style="width:120px;height:120px;border-radius:50%;background:#0876b9;color:#fff;display:grid;place-items:center;font-size:2rem;font-weight:800">GS</div><h3>Dr Gour Gopal Saha</h3><p><b data-i18n="doc.dept">বিভাগ:</b> <span data-dept="Eye">Eye</span><br><b data-i18n="doc.designation">পদবি:</b> <span data-i18n="doc.assoc_prof">সহযোগী অধ্যাপক</span><br><b data-i18n="doc.degree">ডিগ্রি:</b> <span data-i18n="doc.tba">হাসপাতাল থেকে জানানো হবে</span><br><b data-i18n="doc.chamber">চেম্বার:</b> <span data-i18n-html="doc.chamber_text">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল, সাভার; এছাড়াও গণস্বাস্থ্য নগর হাসপাতাল, ধানমন্ডি</span><br><b data-i18n="doc.chamber_time">চেম্বারের দিন ও সময়:</b> <span data-i18n="doc.tba">হাসপাতাল থেকে জানানো হবে</span></p><p class="muted small" data-i18n="doc.photo_note">ছবি: জিএনএইচ সাইটে এই চিকিৎসকের আসল ছবি নেই, তাই ছবি পরে বসবে।</p></article>
+</div><div class="empty" id="docEmpty" style="display:none"><p><b data-i18n="doctors.empty">খুঁজে পাওয়া যায়নি।</b></p></div></section>
 
 <script>
 function filterDoctors(){
@@ -40,19 +43,22 @@ function filterDoctors(){
     c.style.display = ok ? '' : 'none';
     if(ok) n++;
   });
-  document.getElementById('docCount').textContent = n + ' jon doctor talikabhukto';
+  var countEl = document.getElementById('docCount');
+  countEl.textContent = (window.GSVMCH_I18N ? window.GSVMCH_I18N.countText(n) : n + ' জন চিকিৎসক তালিকাভুক্ত');
   document.getElementById('docEmpty').style.display = n===0 ? 'block' : 'none';
 }
 document.getElementById('docSearch').addEventListener('input', filterDoctors);
 document.getElementById('docDept').addEventListener('change', filterDoctors);
+document.addEventListener('gsvmch-lang', filterDoctors);
 filterDoctors();
 </script>
 
 
 </main>
 <footer class="site"><div class="footer-inner">
-<div><h3>Gonoshasthaya Samaj Vittik Medical College Hospital</h3><p>Mirzanagar, via Savar Cantonment, Ashulia, Savar, Dhaka-1344<br>250-bed hospital, 1972 sal theke</p></div>
-<div><h3>Jogajog</h3><p>Email: gsvmchospital@gmail.com<br>Phone: 027792225</p><p class="small">Phone number ti hospital office theke nischito kora hoyni.</p></div>
-<div><h3>Druto Link</h3><p><a href="../pages/departments.html">Bibhag</a><br><a href="../pages/appointments.html">Appointment</a><br><a href="../pages/patient-guide.html">Patient Guide</a><br><a href="../pages/notices.html">Notice</a></p></div>
-</div><div class="footer-bottom">© Gonoshasthaya Samaj Vittik Medical College Hospital, Savar</div></footer>
+<div><h3 data-i18n="brand.name">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল</h3><p data-i18n-html="foot.addr">মির্জানগর, ভায়া সাভার ক্যান্টনমেন্ট, আশুলিয়া, সাভার, ঢাকা-১৩৪৪<br>২৫০ শয্যার হাসপাতাল, ১৯৭২ সাল থেকে</p></div>
+<div><h3 data-i18n="foot.contact_h">যোগাযোগ</h3><p>Email: gsvmchospital@gmail.com<br><span data-i18n="contact.phone">ফোন: ০২৭৭৯২২২৫</span></p><p class="small" data-i18n="foot.phone_note">ফোন নম্বরটি হাসপাতালের অফিস থেকে এখনো নিশ্চিত করা হয়নি।</p></div>
+<div><h3 data-i18n="foot.quick">দ্রুত লিংক</h3><p><a href="../pages/departments.html" data-i18n="nav.departments">বিভাগসমূহ</a><br><a href="../pages/appointments.html" data-i18n="nav.appointments">অ্যাপয়েন্টমেন্ট</a><br><a href="../pages/patient-guide.html" data-i18n="nav.guide">রোগীর নির্দেশিকা</a><br><a href="../pages/notices.html" data-i18n="nav.notice">নোটিশ</a></p></div>
+</div><div class="footer-bottom" data-i18n="foot.copy_short">© গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল, সাভার</div></footer>
+<script src="../assets/lang.js"></script>
 </body></html>
