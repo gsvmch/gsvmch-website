@@ -12,7 +12,7 @@
     /* ---- shared chrome ---- */
     'brand.name': { bn: 'গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল', en: 'Gonoshasthaya Samaj Vittik Medical College Hospital' },
     'brand.sub': { bn: 'জিএসভিএমসিএইচ — সাভার, ঢাকা', en: 'GSVMCH — Savar, Dhaka' },
-    'top.addr': { bn: '📍 মির্জানগর, আশুলিয়া, সাভার, ঢাকা-১৩৪৪', en: '📍 Mirzanagar, Ashulia, Savar, Dhaka-1344' },
+    'top.addr': { bn: 'মির্জানগর, আশুলিয়া, সাভার, ঢাকা-১৩৪৪', en: 'Mirzanagar, Ashulia, Savar, Dhaka-1344' },
     'top.emergency': { bn: 'জরুরি: [নিশ্চিত করা হয়নি]', en: 'Emergency: [To be confirmed]' },
     'top.notice': { bn: 'নোটিশ', en: 'Notice' },
     'top.gallery': { bn: 'গ্যালারি', en: 'Gallery' },

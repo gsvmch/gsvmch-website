@@ -77,7 +77,8 @@ section{margin-top:2.4rem}
 .shortcuts{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .shortcut{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
 .shortcut:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(18,59,93,.12)}
-.shortcut .icon{font-size:1.6rem}
+.shortcut .icon{width:52px;height:52px}
+.shortcut.emergency .icon{color:#dc3545;background:#fdecec}
 .shortcut h3{margin:.3rem 0}
 .shortcut p{margin:0;color:var(--muted);font-size:.93rem}
 .shortcut.emergency{border-left:5px solid #dc3545}
@@ -158,7 +159,12 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
 .spec-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem .6rem;text-align:center;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
 .spec-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(18,59,93,.12)}
 .spec-card h3{font-size:.98rem;margin:.4rem 0 0}
-.spec-icon{font-size:1.7rem}
+.spec-icon,.dept-icon,.shortcut .icon{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#eaf3fb,#d9f2f0);color:var(--blue);flex:none;transition:background .25s,color .25s,box-shadow .25s}
+.spec-icon svg,.dept-icon svg,.shortcut .icon svg{width:32px;height:32px}
+.dept-icon{margin-bottom:.35rem}
+.inline-icon{display:inline-flex;vertical-align:-3px;color:var(--blue)}
+.inline-icon svg{width:18px;height:18px}
+.topbar .inline-icon{color:#fff;vertical-align:-4px}
 .stats-band{background:var(--navy);border-radius:var(--radius);padding:1.6rem 1.2rem;margin-top:2.4rem}
 .stats-band-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .stats-band .stat b{color:#fff}
