@@ -176,3 +176,14 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
   .about-wrap{grid-template-columns:1fr}
   .hero img{height:300px}
 }
+
+/* Language toggle (top bar) */
+.lang-toggle{display:inline-flex;gap:.15rem;margin-left:.35rem}
+.lang-btn{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff;border-radius:999px;padding:.1rem .6rem;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer}
+.lang-btn.active{background:#fff;color:var(--navy);border-color:#fff}
+.lang-btn:hover{text-decoration:none}
+
+/* Figure inside a content card (e.g. About page gate photo) */
+.card figure{margin:1rem 0 0}
+.card figure img{width:100%;border-radius:12px}
+.card figcaption{font-size:.92rem;color:var(--muted);margin-top:.4rem}
