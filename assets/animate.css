@@ -1,0 +1,87 @@
+/* GSVMCH — animations (v7 add-on, loaded after style.css)
+   Pure CSS transitions + keyframes, no external libraries, no external URLs.
+   Reveal elements are hidden ONLY when JS runs (html.js), so with JS off
+   everything stays visible. Respects prefers-reduced-motion. */
+
+/* ---------- 1. Load entrance: top bar + header slide down ---------- */
+@keyframes slideDown{
+  from{opacity:0;transform:translateY(-14px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.topbar{animation:slideDown .55s ease-out both}
+header.site{animation:slideDown .55s .08s ease-out both}
+
+/* ---------- 2. Hero slider: cross-fade + slow Ken Burns zoom ---------- */
+.hero-slider{overflow:hidden}
+.hero .hero-slider .slide{
+  display:block; /* overrides style.css display:none so slides can cross-fade */
+  position:absolute;inset:0;opacity:0;pointer-events:none;
+  transition:opacity .9s ease;
+}
+.hero-slider .slide.active{
+  position:relative;opacity:1;pointer-events:auto;
+}
+.hero-slider .slide img{
+  transform:scale(1);will-change:transform;
+}
+.hero-slider .slide.active img{
+  animation:kenBurns 7s ease-out forwards;
+}
+@keyframes kenBurns{
+  from{transform:scale(1.12)}
+  to{transform:scale(1)}
+}
+.hero-overlay{animation:heroTextIn .8s .15s ease-out both}
+@keyframes heroTextIn{
+  from{opacity:0;transform:translateY(14px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.dot{transition:background .25s,transform .25s}
+.dot:hover{transform:scale(1.25)}
+
+/* ---------- 3. Scroll reveal (only when JS is on: html.js) ---------- */
+html.js .reveal{
+  opacity:0;transform:translateY(22px);
+  transition:opacity .65s ease,transform .65s ease;
+  will-change:opacity,transform;
+}
+html.js .reveal.in{opacity:1;transform:translateY(0)}
+html.js .reveal-left{transform:translateX(-24px)}
+html.js .reveal-right{transform:translateX(24px)}
+html.js .reveal-left.in,
+html.js .reveal-right.in{transform:translateX(0)}
+
+/* ---------- 4. Card hover lift ---------- */
+.card,.doc-card,.gallery figure,.about-photo{
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.card:hover,.doc-card:hover,.gallery figure:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 26px rgba(18,59,93,.14);
+}
+.gallery img,.about-photo{transition:transform .45s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+
+/* ---------- 5. Buttons ---------- */
+.btn{transition:background .2s,transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 6px 16px rgba(8,118,185,.28)}
+.btn:active{transform:translateY(0) scale(.98)}
+nav.main a{transition:background .2s,color .2s}
+.lang-btn{transition:background .2s,color .2s}
+
+/* ---------- 6. Stats: gentle pop when counted ---------- */
+.stats-band .stat b,.stats-box .stat b{display:inline-block}
+.stat.counting b{animation:statPop .5s ease}
+@keyframes statPop{
+  0%{transform:scale(.92)}60%{transform:scale(1.06)}100%{transform:scale(1)}
+}
+
+/* ---------- 7. Reduced motion: turn everything off ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+  html.js .reveal{opacity:1;transform:none}
+}
