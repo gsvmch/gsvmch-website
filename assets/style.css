@@ -132,6 +132,8 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
   .hero-text{padding:1.4rem}
   .brand b{font-size:.9rem}
   .brand img{width:44px;height:44px}
+  .spec-icon,.dept-icon{width:64px;height:64px}
+  .spec-icon img,.dept-icon img{width:64px;height:64px}
   h1{font-size:1.6rem}
 }
 
@@ -159,8 +161,11 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
 .spec-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem .6rem;text-align:center;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
 .spec-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(18,59,93,.12)}
 .spec-card h3{font-size:.98rem;margin:.4rem 0 0}
-.spec-icon,.dept-icon,.shortcut .icon{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#eaf3fb,#d9f2f0);color:var(--blue);flex:none;transition:background .25s,color .25s,box-shadow .25s}
-.spec-icon svg,.dept-icon svg,.shortcut .icon svg{width:32px;height:32px}
+.shortcut .icon{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#eaf3fb,#d9f2f0);color:var(--blue);flex:none;transition:background .25s,color .25s,box-shadow .25s}
+.shortcut .icon svg{width:32px;height:32px}
+/* Premium PNG dept icons: no circular badge — the PNGs carry their own soft-blue glow */
+.spec-icon,.dept-icon{display:inline-flex;align-items:center;justify-content:center;width:76px;height:76px;flex:none}
+.spec-icon img,.dept-icon img{width:76px;height:76px;object-fit:contain;transition:transform .25s ease,filter .25s ease}
 .dept-icon{margin-bottom:.35rem}
 .inline-icon{display:inline-flex;vertical-align:-3px;color:var(--blue)}
 .inline-icon svg{width:18px;height:18px}
@@ -255,4 +260,42 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
 @media(max-width:560px){
   .brand img{width:48px;height:48px}
   .brand b{font-size:.95rem}
+}
+
+/* ---- Mobile fixes 2026-11-02 (Miraz-approved) ---- */
+/* Hamburger button — hidden on desktop */
+.nav-toggle{display:none;background:var(--navy);color:#fff;border:0;border-radius:10px;width:44px;height:44px;font-size:1.5rem;line-height:1;cursor:pointer;flex:none}
+.nav-toggle:hover{background:#0d2c45}
+/* Appointment form — two-column grid, full section width */
+#apptForm{max-width:none}
+#apptForm.form-grid{grid-template-columns:1fr 1fr}
+#apptForm.form-grid .btn,#apptForm.form-grid #apptResult{grid-column:1/-1}
+/* Date field looks like a proper date picker, same height as the other fields */
+input[type="date"]{min-height:46px}
+input[type="date"]::-webkit-calendar-picker-indicator{cursor:pointer}
+@media(max-width:860px){
+  /* Compact one-row header: brand + hamburger + Send Query button */
+  .header-inner{flex-wrap:nowrap;gap:.6rem}
+  .brand{min-width:0}
+  .brand .tagline{display:none}
+  .nav-toggle{display:block}
+  .btn.query{flex:none;padding:.55rem .8rem;white-space:nowrap}
+  /* With JS on, the nav is hidden until the hamburger is tapped;
+     without JS (no html.js) the menu stays visible as before */
+  html.js nav.main{display:none}
+  body.nav-open nav.main{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 8px 18px rgba(18,59,93,.12);padding:.4rem .8rem .8rem}
+  body.nav-open nav.main a{border-radius:8px;padding:.6rem .8rem}
+}
+@media(max-width:560px){
+  /* Quick-action cards: 2 columns, 5th card full width */
+  .shortcuts{grid-template-columns:repeat(2,1fr)}
+  .shortcut.emergency{grid-column:1/-1}
+  /* Appointment form collapses to 1 column */
+  #apptForm.form-grid{grid-template-columns:1fr}
+  .brand b{font-size:.92rem}
+  .brand small{font-size:.8rem}
+}
+@media(max-width:420px){
+  /* Founder strip stacks only when very narrow */
+  .founder-strip{flex-direction:column;align-items:flex-start}
 }

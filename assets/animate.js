@@ -5,6 +5,22 @@
 (function () {
   'use strict';
   document.documentElement.classList.add('js');
+
+  /* ---------- Mobile nav toggle (hamburger) ---------- */
+  var navToggle = document.querySelector('.nav-toggle');
+  var mainNav = document.querySelector('nav.main');
+  if (navToggle && mainNav) {
+    navToggle.addEventListener('click', function () {
+      var open = document.body.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A') {
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var BN = { '০': 0, '১': 1, '২': 2, '৩': 3, '৪': 4, '৫': 5, '৬': 6, '৭': 7, '৮': 8, '৯': 9 };
