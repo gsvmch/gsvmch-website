@@ -192,10 +192,13 @@
     'Surgery':[{name:'Dr Najibul Islam',desigKey:'appt.desig_najibul'}],
     'Eye':[{name:'Dr Gour Gopal Saha',desigKey:'appt.desig_gour'}]
   };
+  /* Dept <option>s have no value attr, so .value == translated text
+     (e.g. 'মেডিসিন' in bn mode). The English key lives in data-dept. */
+  function deptKey(){var o=dept.options[dept.selectedIndex];return o?o.getAttribute('data-dept'):'';}
   function rebuildDoctors(keep){
     var keepVal=keep?doctor.value:'';
     doctor.innerHTML='';
-    var list=DOCTORS[dept.value]||[];
+    var list=DOCTORS[deptKey()]||[];
     if(!list.length){
       var o=document.createElement('option');o.value='';o.textContent=t('appt.doctor_ph');doctor.appendChild(o);
     }else{
@@ -206,7 +209,7 @@
     showDesig();
   }
   function showDesig(){
-    var list=DOCTORS[dept.value]||[];
+    var list=DOCTORS[deptKey()]||[];
     var sel=null;
     list.forEach(function(d){if(d.name===doctor.value)sel=d;});
     if(sel){desig.textContent=t(sel.desigKey);desig.hidden=false;}
