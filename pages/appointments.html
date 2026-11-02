@@ -25,23 +25,93 @@
 <p data-i18n-html="appt.steps">ধাপ: <b>বিভাগ → তারিখ → অনুরোধ → অফিস থেকে নিশ্চিতকরণ</b>। অনুরোধ করলেই অ্যাপয়েন্টমেন্ট নিশ্চিত হয় না।</p>
 
 <div class="notice-box" data-i18n-html="appt.note"><b>অ্যাপয়েন্টমেন্টের অনুরোধ</b> — এই ফরমটি অনুরোধ হিসেবে জমা হবে, হাসপাতালের অফিস তা নিশ্চিত করবে। অনুরোধ করলেই অ্যাপয়েন্টমেন্ট নিশ্চিত হয় না। অনলাইন বুকিং, রেফারেন্স নম্বর ও এসএমএস এখনো চালু হয়নি।</div>
-<form id="apptForm">
-<label><span data-i18n="appt.dept_label">বিভাগ</span><select required><option value="" data-i18n="appt.choose_dept">বিভাগ বাছুন</option><option data-dept="Emergency">Emergency</option><option data-dept="Surgery">Surgery</option><option data-dept="Medicine">Medicine</option><option data-dept="Gyne and Obs">Gyne and Obs</option><option data-dept="Paediatric Surgery">Paediatric Surgery</option><option data-dept="Pediatric">Pediatric</option><option data-dept="ENT">ENT</option><option data-dept="Skin">Skin</option><option data-dept="Eye">Eye</option><option data-dept="Orthopedics">Orthopedics</option><option data-dept="Anesthesia">Anesthesia</option><option data-dept="Radiology">Radiology</option><option data-dept="Psychiatry">Psychiatry</option></select></label>
-<label><span data-i18n="appt.doctor_label">চিকিৎসক</span><select><option data-i18n="appt.doctor_ph">চিকিৎসকের তালিকা আসার পর এখানে বসবে</option></select></label>
-<label><span data-i18n="appt.date_label">তারিখ</span><input type="date" required></label>
-<label><span data-i18n="appt.name_label">রোগীর নাম</span><input data-i18n-ph="appt.name_label" placeholder="রোগীর নাম" required></label>
-<label><span data-i18n="appt.mobile_label">মোবাইল নম্বর</span><input data-i18n-ph="appt.mobile_label" placeholder="মোবাইল নম্বর" required></label>
-<label><span data-i18n="appt.reason_label">কারণ (ঐচ্ছিক)</span><textarea rows="2" data-i18n-ph="appt.reason_ph" placeholder="সমস্যা বা কারণ লিখুন"></textarea></label>
-<button class="btn" type="submit" data-i18n="appt.submit">অনুরোধ পাঠান</button>
-<p id="apptResult" class="muted"></p>
+<form id="apptForm" class="form-grid" novalidate>
+<div class="form-field"><label for="apptDept"><span data-i18n="appt.dept_label">বিভাগ</span><select id="apptDept" required><option value="" data-i18n="appt.choose_dept">বিভাগ বাছুন</option><option data-dept="Emergency">Emergency</option><option data-dept="Surgery">Surgery</option><option data-dept="Medicine">Medicine</option><option data-dept="Gyne and Obs">Gyne and Obs</option><option data-dept="Paediatric Surgery">Paediatric Surgery</option><option data-dept="Pediatric">Pediatric</option><option data-dept="ENT">ENT</option><option data-dept="Skin">Skin</option><option data-dept="Eye">Eye</option><option data-dept="Orthopedics">Orthopedics</option><option data-dept="Anesthesia">Anesthesia</option><option data-dept="Radiology">Radiology</option><option data-dept="Psychiatry">Psychiatry</option></select></label><span class="field-err" id="err-dept"></span></div>
+<div class="form-field"><label for="apptDoctor"><span data-i18n="appt.doctor_label">চিকিৎসক</span><select id="apptDoctor"><option value="" data-i18n="appt.doctor_ph">চিকিৎসকের তালিকা আসার পর এখানে বসবে</option></select></label><p class="doc-desig" id="docDesig" hidden></p><span class="field-err" id="err-doctor"></span></div>
+<div class="form-field"><label for="apptDate"><span data-i18n="appt.date_label">তারিখ</span><input id="apptDate" type="date" required></label><span class="field-err" id="err-date"></span></div>
+<div class="form-field"><label for="apptName"><span data-i18n="appt.name_label">রোগীর নাম</span><input id="apptName" data-i18n-ph="appt.name_label" placeholder="রোগীর নাম" required></label><span class="field-err" id="err-name"></span></div>
+<div class="form-field"><label for="apptMobile"><span data-i18n="appt.mobile_label">মোবাইল নম্বর</span><input id="apptMobile" type="tel" inputmode="numeric" autocomplete="tel" data-i18n-ph="appt.mobile_label" placeholder="মোবাইল নম্বর" required></label><span class="field-err" id="err-mobile"></span></div>
+<div class="form-field"><label for="apptReason"><span data-i18n="appt.reason_label">কারণ (ঐচ্ছিক)</span><textarea id="apptReason" rows="2" data-i18n-ph="appt.reason_ph" placeholder="সমস্যা বা কারণ লিখুন"></textarea></label></div>
+<button class="btn" type="submit" id="apptSubmit" data-i18n="appt.submit">অনুরোধ পাঠান</button>
+<p id="apptResult" class="muted" role="status"></p>
 </form>
 <script>
-document.getElementById('apptForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  document.getElementById('apptResult').textContent = (window.GSVMCH_I18N ? window.GSVMCH_I18N.t('appt.result') : 'এই ফরমটি এখনো পরীক্ষামূলক কাঠামো — আপনার তথ্য কোথাও পাঠানো হয়নি। অ্যাপয়েন্টমেন্টের জন্য হাসপাতালের অফিসে যোগাযোগ করুন।');
-  this.reset();
-});
+(function(){
+  var form=document.getElementById('apptForm');
+  var dept=document.getElementById('apptDept');
+  var doctor=document.getElementById('apptDoctor');
+  var dateEl=document.getElementById('apptDate');
+  var nameEl=document.getElementById('apptName');
+  var mobile=document.getElementById('apptMobile');
+  var submit=document.getElementById('apptSubmit');
+  var result=document.getElementById('apptResult');
+  var desig=document.getElementById('docDesig');
+  function t(k){return window.GSVMCH_I18N?window.GSVMCH_I18N.t(k):k;}
+  /* ONLY 3 doctors are known so far — no schedules exist, none are shown. */
+  var DOCTORS={
+    'Medicine':[{name:'Dr Masrura Jabin',desigKey:'doc.masrura_desig'}],
+    'Surgery':[{name:'Dr Najibul Islam',desigKey:'appt.desig_najibul'}],
+    'Eye':[{name:'Dr Gour Gopal Saha',desigKey:'appt.desig_gour'}]
+  };
+  /* Dept <option>s have no value attr, so .value == translated text
+     (e.g. 'মেডিসিন' in bn mode). The English key lives in data-dept. */
+  function deptKey(){var o=dept.options[dept.selectedIndex];return o?o.getAttribute('data-dept'):'';}
+  function rebuildDoctors(keep){
+    var keepVal=keep?doctor.value:'';
+    doctor.innerHTML='';
+    var list=DOCTORS[deptKey()]||[];
+    if(!list.length){
+      var o=document.createElement('option');o.value='';o.textContent=t('appt.doctor_ph');doctor.appendChild(o);
+    }else{
+      var o0=document.createElement('option');o0.value='';o0.textContent=t('appt.choose_doctor');doctor.appendChild(o0);
+      list.forEach(function(d){var o=document.createElement('option');o.value=d.name;o.textContent=d.name;doctor.appendChild(o);});
+    }
+    if(keepVal){doctor.value=keepVal;}
+    showDesig();
+  }
+  function showDesig(){
+    var list=DOCTORS[deptKey()]||[];
+    var sel=null;
+    list.forEach(function(d){if(d.name===doctor.value)sel=d;});
+    if(sel){desig.textContent=t(sel.desigKey);desig.hidden=false;}
+    else{desig.textContent='';desig.hidden=true;}
+  }
+  function setErr(id,msg){var e=document.getElementById('err-'+id);if(e){e.textContent=msg||'';e.classList.toggle('show',!!msg);}}
+  function markInvalid(el,id,msg){el.classList.add('invalid');setErr(id,msg);}
+  function clearField(el,id){el.classList.remove('invalid');setErr(id,'');}
+  dept.addEventListener('change',function(){rebuildDoctors(false);clearField(dept,'dept');});
+  doctor.addEventListener('change',showDesig);
+  [dateEl,nameEl,mobile].forEach(function(el){
+    el.addEventListener('input',function(){el.classList.remove('invalid');});
+  });
+  function validMobile(v){v=v.replace(/[\s-]/g,'');return /^01[3-9]\d{8}$/.test(v);}
+  function todayStr(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  dateEl.min=todayStr();
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    if(!dept.value){markInvalid(dept,'dept',t('appt.err_dept'));ok=false;}
+    if(!dateEl.value){markInvalid(dateEl,'date',t('appt.err_date'));ok=false;}
+    else if(dateEl.value<todayStr()){markInvalid(dateEl,'date',t('appt.err_date_past'));ok=false;}
+    if(!nameEl.value.trim()){markInvalid(nameEl,'name',t('appt.err_name'));ok=false;}
+    if(!validMobile(mobile.value)){markInvalid(mobile,'mobile',t('appt.err_mobile'));ok=false;}
+    if(!ok){result.textContent='';result.className='muted';return;}
+    submit.disabled=true;
+    var orig=submit.textContent;
+    submit.textContent=t('appt.sending');
+    result.textContent='';result.className='muted';
+    setTimeout(function(){
+      submit.disabled=false;submit.textContent=orig;
+      result.textContent=t('appt.success');
+      result.className='form-success';
+      form.reset();rebuildDoctors(false);
+    },900);
+  });
+  document.addEventListener('gsvmch-lang',function(){rebuildDoctors(true);});
+  rebuildDoctors(false);
+})();
 </script>
+<p class="appt-confirm" data-i18n="appt.confirm_note">অনলাইনে অনুরোধ পাঠানো মানেই অ্যাপয়েন্টমেন্ট নিশ্চিত হওয়া নয়। হাসপাতাল কর্তৃপক্ষের নিশ্চিতকরণের পর অ্যাপয়েন্টমেন্ট চূড়ান্ত হবে।</p>
 </section>
 
 </main>
