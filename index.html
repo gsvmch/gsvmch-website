@@ -13,7 +13,7 @@
 <body>
 <div class="topbar"><div class="topbar-inner">
 <span class="inline-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M24 40S12 29.5 12 20a12 12 0 0 1 24 0c0 9.5-12 20-12 20z"/><circle cx="24" cy="20" r="4.5"/></svg></span><span data-i18n="top.addr">মির্জানগর, আশুলিয়া, সাভার, ঢাকা-১৩৪৪</span>
-<span class="topbar-right"><span data-i18n="top.emergency">জরুরি: [নিশ্চিত করা হয়নি]</span> <span class="topbar-sep">|</span> <a href="pages/notices.html" data-i18n="top.notice">নোটিশ</a> <span class="topbar-sep">|</span> <a href="pages/gallery.html" data-i18n="top.gallery">গ্যালারি</a> <span class="topbar-sep">|</span> <span class="lang-toggle"><button type="button" class="lang-btn active" data-lang="bn">বাংলা</button><button type="button" class="lang-btn" data-lang="en">English</button></span></span>
+<span class="topbar-right"><a href="pages/notices.html" data-i18n="top.notice">নোটিশ</a> <span class="topbar-sep">|</span> <a href="pages/gallery.html" data-i18n="top.gallery">গ্যালারি</a> <span class="topbar-sep">|</span> <span class="lang-toggle"><button type="button" class="lang-btn active" data-lang="bn">বাংলা</button><button type="button" class="lang-btn" data-lang="en">English</button></span></span>
 </div></div>
 <header class="site"><div class="header-inner">
 <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Gonoshasthaya Samaj Vittik Medical College logo"><span class="wordmark"><b data-i18n="brand.name">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল</b><small data-i18n="brand.sub">জিএসভিএমসিএইচ — সাভার, ঢাকা</small><small class="tagline" data-i18n="brand.tag">সহানুভূতির সঙ্গে মানসম্মত স্বাস্থ্যসেবা</small></span></a>
@@ -22,51 +22,112 @@
 </div></header>
 <main>
 
-<section class="hero">
-<div class="hero-slider" id="heroSlider">
-<div class="slide active"><img src="assets/hero.jpg" alt="গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল ভবন, সাভার"></div>
-<div class="slide"><img src="assets/entrance.jpg" alt="গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতালের প্রবেশপথ, মির্জানগর, সাভার"></div>
-<div class="slide"><img src="assets/gate.jpg" alt="গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতালের প্রধান গেট, সাভার"></div>
-<div class="hero-overlay"><div class="hero-text">
-<span class="pill" data-i18n="hero.pill">সহানুভূতির সঙ্গে মানসম্মত স্বাস্থ্যসেবা</span>
-<h1>Gonoshasthaya Samaj Vittik Medical College Hospital</h1>
-<p data-i18n="hero.sub">সহজলভ্য স্বাস্থ্যসেবা ও চিকিৎসা শিক্ষার মাধ্যমে সমাজের সেবায়। ২৫০ শয্যার হাসপাতাল, ১৯৭২ সালে প্রতিষ্ঠিত, ২৪ ঘণ্টা খোলা।</p>
-<div class="btn-row">
-<a class="btn" href="pages/appointments.html" data-i18n="hero.cta_appt">অ্যাপয়েন্টমেন্ট বুক করুন →</a>
-<a class="btn secondary" href="pages/departments.html" data-i18n="hero.cta_dept">বিভাগসমূহ দেখুন →</a>
+<section class="first-screen">
+<img class="first-screen-bg" src="assets/hero.jpg" alt="গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল ভবন, সাভার">
+<div class="first-screen-overlay"><div class="first-screen-inner">
+<p class="first-screen-eyebrow" data-i18n="cta.eyebrow">১৯৭২ সাল থেকে সাধারণ মানুষের হাসপাতাল</p>
+<h1 data-i18n="brand.tag">সহানুভূতির সঙ্গে মানসম্মত স্বাস্থ্যসেবা</h1>
+<p class="first-screen-sub" data-i18n="hero.sub">সহজলভ্য স্বাস্থ্যসেবা ও চিকিৎসা শিক্ষার মাধ্যমে সমাজের সেবায়। ২৫০ শয্যার হাসপাতাল, ১৯৭২ সালে প্রতিষ্ঠিত, ২৪ ঘণ্টা খোলা।</p>
+<div class="cta-grid">
+<a class="cta-btn" href="pages/doctors.html"><span class="cta-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M13 9v9a11 11 0 0 0 22 0V9"/><path pathLength="100" d="M10 9h3"/><path pathLength="100" d="M35 9h3"/><path pathLength="100" d="M24 29v3"/><circle cx="24" cy="36" r="4"/><circle cx="24" cy="36" r="1" fill="currentColor" stroke="none"/></svg></span><b data-i18n="cta.doctor_h">চিকিৎসক খুঁজুন</b><span data-i18n="cta.doctor_p">আমাদের চিকিৎসকদের খুঁজুন</span></a>
+<a class="cta-btn" href="pages/appointments.html"><span class="cta-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="11" width="30" height="28" rx="3"/><path pathLength="100" d="M9 19h30"/><path pathLength="100" d="M16 7v6"/><path pathLength="100" d="M32 7v6"/><path pathLength="100" d="M18 29l3.5 3.5L29 25"/></svg></span><b data-i18n="cta.appt_h">অ্যাপয়েন্টমেন্ট</b><span data-i18n="cta.appt_p">আপনার অ্যাপয়েন্টমেন্ট বুক করুন</span></a>
+<a class="cta-btn" href="pages/departments.html"><span class="cta-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="15"/><path pathLength="100" d="M24 16v16"/><path pathLength="100" d="M16 24h16"/></svg></span><b data-i18n="cta.dept_h">বিভাগসমূহ</b><span data-i18n="cta.dept_p">আমাদের বিভাগসমূহ দেখুন</span></a>
+<a class="cta-btn emergency" href="pages/patient-guide.html"><span class="cta-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M14 30a10 10 0 0 1 20 0"/><path pathLength="100" d="M10 30h28"/><path pathLength="100" d="M12 36h24"/><path pathLength="100" d="M24 12V9"/><path pathLength="100" d="M15 9.5l2 2"/><path pathLength="100" d="M33 9.5l-2 2"/><circle cx="24" cy="22" r="2.5"/></svg></span><b data-i18n="cta.emerg_h">জরুরি তে কি করবো</b><span data-i18n="cta.emerg_p">জরুরি অবস্থায় কী করবেন</span></a>
 </div>
-<div class="dots" id="heroDots"><button class="dot active" data-slide="0" aria-label="Slide 1"></button><button class="dot" data-slide="1" aria-label="Slide 2"></button><button class="dot" data-slide="2" aria-label="Slide 3"></button></div>
 </div></div>
-<button class="hero-arrow prev" type="button" data-nav="-1" aria-label="Previous slide">‹</button><button class="hero-arrow next" type="button" data-nav="1" aria-label="Next slide">›</button></div>
 </section>
-
-<section><div class="shortcuts">
-<div class="shortcut"><span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M13 9v9a11 11 0 0 0 22 0V9"/><path pathLength="100" d="M10 9h3"/><path pathLength="100" d="M35 9h3"/><path pathLength="100" d="M24 29v3"/><circle cx="24" cy="36" r="4"/><circle cx="24" cy="36" r="1" fill="currentColor" stroke="none"/></svg></span><h3 data-i18n="sc.doctor_h">চিকিৎসক খুঁজুন</h3><p><a href="pages/doctors.html" data-i18n="sc.doctor_p">আমাদের চিকিৎসকদের খুঁজুন</a></p></div>
-<div class="shortcut"><span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="11" width="30" height="28" rx="3"/><path pathLength="100" d="M9 19h30"/><path pathLength="100" d="M16 7v6"/><path pathLength="100" d="M32 7v6"/><path pathLength="100" d="M18 29l3.5 3.5L29 25"/></svg></span><h3 data-i18n="sc.appt_h">অ্যাপয়েন্টমেন্ট</h3><p><a href="pages/appointments.html" data-i18n="sc.appt_p">আপনার অ্যাপয়েন্টমেন্ট বুক করুন</a></p></div>
-<div class="shortcut"><span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M13 9v9a11 11 0 0 0 22 0V9"/><path pathLength="100" d="M10 9h3"/><path pathLength="100" d="M35 9h3"/><path pathLength="100" d="M24 29v3"/><circle cx="24" cy="36" r="4"/><circle cx="24" cy="36" r="1" fill="currentColor" stroke="none"/></svg></span><h3 data-i18n="sc.dept_h">বিভাগসমূহ</h3><p><a href="pages/departments.html" data-i18n="sc.dept_p">আমাদের বিভাগসমূহ দেখুন</a></p></div>
-<div class="shortcut"><span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="15"/><path pathLength="100" d="M31 17l-3.5 8.5L19 29l3.5-8.5z"/><circle cx="24" cy="24" r="1.5" fill="currentColor" stroke="none"/></svg></span><h3 data-i18n="sc.guide_h">রোগীর নির্দেশিকা</h3><p><a href="pages/patient-guide.html" data-i18n="sc.guide_p">আমাদের হাসপাতালের নির্দেশিকা</a></p></div>
-<div class="shortcut emergency"><span class="icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M14 30a10 10 0 0 1 20 0"/><path pathLength="100" d="M10 30h28"/><path pathLength="100" d="M12 36h24"/><path pathLength="100" d="M24 12V9"/><path pathLength="100" d="M15 9.5l2 2"/><path pathLength="100" d="M33 9.5l-2 2"/><circle cx="24" cy="22" r="2.5"/></svg></span><h3 data-i18n="sc.emergency_h">জরুরি</h3><p data-i18n-html="sc.emergency_p">২৪/৭ জরুরি সেবা<br>হটলাইন: [নিশ্চিত করা হয়নি]</p></div>
-</div></section>
 
 <section class="why-choose"><div class="section-head"><h2 data-i18n="why.h2">কেন গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল</h2><p class="muted" data-i18n="why.p">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল একটি ২৫০ শয্যার শিক্ষণ হাসপাতাল, ১৯৭২ সালে গণস্বাস্থ্য কেন্দ্রের উদ্যোগে প্রতিষ্ঠিত। সাধারণ মানুষের জন্য সহজলভ্য ও মানসম্মত স্বাস্থ্যসেবা দেওয়াই আমাদের লক্ষ্য।</p></div></section>
 
 <section id="departments"><div class="section-head"><h2 data-i18n="spec.h2">আমাদের চিকিৎসা বিশেষত্বসমূহ</h2><p class="muted" data-i18n="spec.sub">বিস্তৃত পরিসরে সার্বিক চিকিৎসাসেবা</p></div>
 <div class="spec-layout"><img class="spec-photo" src="assets/entrance-about.jpg" alt="গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতালের প্রবেশদ্বারের সাইনবোর্ড — ২৪ ঘণ্টা খোলা, মির্জানগর, সাভার, ঢাকা-১৩৪৪"><div class="spec-grid">
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/emergency.png" alt=""></span><h3 data-i18n="spec.emergency">জরুরি চিকিৎসা</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/surgery.png" alt=""></span><h3 data-i18n="spec.surgery">সার্জারি</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/medicine.png" alt=""></span><h3 data-i18n="spec.medicine">মেডিসিন</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/gyne.png" alt=""></span><h3 data-i18n="spec.gyne">গাইনি ও প্রসূতি</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/paedsurg.png" alt=""></span><h3 data-i18n="spec.paedsurg">শিশু সার্জারি</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/pediatric.png" alt=""></span><h3 data-i18n="spec.pediatric">শিশুরোগ</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/ent.png" alt=""></span><h3 data-i18n="spec.ent">ইএনটি</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/skin.png" alt=""></span><h3 data-i18n="spec.skin">চর্ম</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/eye.png" alt=""></span><h3 data-i18n="spec.eye">চক্ষু</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/ortho.png" alt=""></span><h3 data-i18n="spec.ortho">অর্থোপেডিকস</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/anesthesia.png" alt=""></span><h3 data-i18n="spec.anesth">অ্যানেসথেসিয়া</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/radiology.png" alt=""></span><h3 data-dept="Radiology" data-i18n="spec.radio">রেডিওলজি</h3></div>
-<div class="spec-card"><span class="spec-icon"><img src="assets/dept-icons/psychiatry.png" alt=""></span><h3 data-i18n="spec.psych">মনোরোগ</h3></div>
+<a class="spec-card" href="pages/department-emergency.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M20 13a4 4 0 0 1 8 0"/><path pathLength="100" d="M24 5v2.5"/><path pathLength="100" d="M16.5 7.5l1.8 1.8"/><path pathLength="100" d="M31.5 7.5l-1.8 1.8"/><rect x="9" y="13" width="30" height="19" rx="3"/><path pathLength="100" d="M9 23h30"/><path pathLength="100" d="M24 16.5v6"/><path pathLength="100" d="M21 19.5h6"/><circle cx="16" cy="34" r="2.6"/><circle cx="32" cy="34" r="2.6"/><path pathLength="100" d="M12 28.5h3"/><path pathLength="100" d="M33 28.5h3"/></svg></span><h3 data-i18n="spec.emergency">জরুরি চিকিৎসা</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M18 11v14"/><path pathLength="100" d="M11 18h14"/><path pathLength="100" d="M8 40L28 20"/><path pathLength="100" d="M28 20c5-1 9-5 11-11-6 2-10 6-11 11z"/><path pathLength="100" d="M6 44h20" stroke-dasharray="3 3"/></svg></span><h3 data-i18n="spec.surgery">সার্জারি</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M13 9v9a11 11 0 0 0 22 0V9"/><path pathLength="100" d="M10 9h3"/><path pathLength="100" d="M35 9h3"/><path pathLength="100" d="M24 29v3"/><circle cx="24" cy="36" r="4"/><circle cx="24" cy="36" r="1" fill="currentColor" stroke="none"/></svg></span><h3 data-i18n="spec.medicine">মেডিসিন</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="11" r="4"/><path pathLength="100" d="M9 36c0-7 4-11 9-11s9 4 9 11"/><circle cx="33" cy="20" r="3"/><path pathLength="100" d="M28 36c0-4.5 2-7.5 5-7.5s5 3 5 7.5"/></svg></span><h3 data-i18n="spec.gyne">গাইনি ও প্রসূতি</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="12" r="5"/><path pathLength="100" d="M11 38c0-8 4-12 9-12s9 4 9 12"/><path pathLength="100" d="M20 24.5v6"/><path pathLength="100" d="M17 27.5h6"/><path pathLength="100" d="M32 37l8-8"/><path pathLength="100" d="M40 29c2.5-.5 4.5-2.5 5.5-5.5-3 1-5 3-5.5 5.5z"/></svg></span><h3 data-i18n="spec.paedsurg">শিশু সার্জারি</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="20" r="13"/><path pathLength="100" d="M13 16c2.5-4.5 6.5-7 11-7s8.5 2.5 11 7"/><circle cx="19" cy="19" r="1.2" fill="currentColor" stroke="none"/><circle cx="29" cy="19" r="1.2" fill="currentColor" stroke="none"/><path pathLength="100" d="M19 25c2 2.5 8 2.5 10 0"/><path pathLength="100" d="M24 42.5c-2.8-1.9-5-3.4-5-5.6 0-1.6 1.2-2.8 2.7-2.8.9 0 1.8.5 2.3 1.3.5-.8 1.4-1.3 2.3-1.3 1.5 0 2.7 1.2 2.7 2.8 0 2.2-2.2 3.7-5 5.6z"/></svg></span><h3 data-i18n="spec.pediatric">শিশুরোগ</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M30 8C20 8 14 15 14 23c0 8 6 15 13 15 4 0 7-3 7-7 0-3-2.5-5-5-5-2.5 0-4 1.8-4 4 0 2 1.5 3.5 3.5 3.5"/><path pathLength="100" d="M30 8c4 0 7 3 7 7 0 3.5-2 6-4.5 7.5"/></svg></span><h3 data-i18n="spec.ent">ইএনটি</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M24 9c-3 4-5 6.5-5 9.5a5 5 0 0 0 10 0C29 15.5 27 13 24 9z"/><path pathLength="100" d="M9 31c3.5 5 9 8 15 8s11.5-3 15-8"/><path pathLength="100" d="M9 31l-2.5-3.5"/><path pathLength="100" d="M39 31l2.5-3.5"/><path pathLength="100" d="M38 6l.9 2.4 2.4.9-2.4.9L38 12.6l-.9-2.4-2.4-.9 2.4-.9z"/></svg></span><h3 data-i18n="spec.skin">চর্ম</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M4 24s7-14 20-14 20 14 20 14-7 14-20 14S4 24 4 24z"/><circle cx="24" cy="24" r="6"/><circle cx="24" cy="24" r="2" fill="currentColor" stroke="none"/></svg></span><h3 data-i18n="spec.eye">চক্ষু</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M34 20c1.4-1.4 3.38 0 5 0a5 5 0 1 0 0-10 1 1 0 0 1-1-1 5 5 0 1 0-10 0c0 1.62 1.4 3.6 0 5l-14 14c-1.4 1.4-3.38 0-5 0a5 5 0 0 0 0 10c.56 0 1 .44 1 1a5 5 0 1 0 10 0c0-1.62-1.4-3.6 0-5z"/></svg></span><h3 data-i18n="spec.ortho">অর্থোপেডিকস</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M36 4l8 8"/><path pathLength="100" d="M34 14l6-6"/><path pathLength="100" d="M38 18L17.4 38.6a4.8 4.8 0 0 1-6.8 0l-1.2-1.2a4.8 4.8 0 0 1 0-6.8L30 10"/><path pathLength="100" d="M18 22l8 8"/><path pathLength="100" d="M10 38l-6 6"/><path pathLength="100" d="M28 8l12 12"/></svg></span><h3 data-i18n="spec.anesth">অ্যানেসথেসিয়া</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="13" y="6" width="22" height="36" rx="3"/><path pathLength="100" d="M24 12v24"/><path pathLength="100" d="M24 16c-4 0-6 2-6 4"/><path pathLength="100" d="M24 16c4 0 6 2 6 4"/><path pathLength="100" d="M24 22c-4 0-6 2-6 4"/><path pathLength="100" d="M24 22c4 0 6 2 6 4"/><path pathLength="100" d="M24 28c-4 0-6 2-6 4"/><path pathLength="100" d="M24 28c4 0 6 2 6 4"/></svg></span><h3 data-dept="Radiology" data-i18n="spec.radio">রেডিওলজি</h3></a>
+<a class="spec-card" href="pages/departments.html"><span class="spec-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="22" r="14"/><path pathLength="100" d="M24 30.5c-3.5-2.4-6-4.4-6-7 0-1.8 1.4-3.2 3-3.2 1.2 0 2.3.7 3 1.7.7-1 1.8-1.7 3-1.7 1.6 0 3 1.4 3 3.2 0 2.6-2.5 4.6-6 7z"/></svg></span><h3 data-i18n="spec.psych">মনোরোগ</h3></a>
 </div></div>
 <p class="view-all"><a class="btn purple" href="pages/departments.html" data-i18n="spec.all">সব বিভাগ দেখুন →</a></p></section>
+
+<section id="finder"><div class="section-head"><h2 data-i18n="finder.h2">আমার সমস্যা কি?</h2><p class="muted" data-i18n="finder.sub">আপনার সমস্যাটি বাছুন — আমরা বলব কোন বিভাগে যেতে হবে।</p></div>
+<div class="chip-wrap" id="finderChips">
+<button type="button" class="chip" data-sym="pet" data-i18n="finder.s1">পেট ব্যথা</button>
+<button type="button" class="chip" data-sym="dizzy" data-i18n="finder.s2">মাথা ঘোরা</button>
+<button type="button" class="chip" data-sym="eye" data-i18n="finder.s3">চোখ ঝাপসা / চোখ লাল</button>
+<button type="button" class="chip" data-sym="chest" data-i18n="finder.s4">বুকে ব্যথা / শ্বাসকষ্ট</button>
+<button type="button" class="chip" data-sym="fever" data-i18n="finder.s5">জ্বর / সর্দি-কাশি</button>
+<button type="button" class="chip" data-sym="skin" data-i18n="finder.s6">চুলকানি / চামড়ার সমস্যা</button>
+<button type="button" class="chip" data-sym="ear" data-i18n="finder.s7">কানে ব্যথা / কম শোনা</button>
+<button type="button" class="chip" data-sym="bone" data-i18n="finder.s8">হাড় ভাঙা / কোমর ব্যথা</button>
+<button type="button" class="chip" data-sym="child" data-i18n="finder.s9">শিশু অসুস্থ</button>
+<button type="button" class="chip" data-sym="preg" data-i18n="finder.s10">গর্ভবতী মায়ের সমস্যা</button>
+<button type="button" class="chip" data-sym="mind" data-i18n="finder.s11">মাথা ব্যথা / ঘুম না হওয়া / মন খারাপ</button>
+<button type="button" class="chip" data-sym="urine" data-i18n="finder.s12">প্রস্রাবের সমস্যা</button>
+</div>
+<div class="finder-result" id="finderResult" hidden>
+<p><b data-i18n="finder.result_dept">বিভাগ:</b> <a id="finderDept" href="pages/departments.html"></a></p>
+<p><b data-i18n="finder.result_doc">চিকিৎসক:</b> <span id="finderDoc"></span></p>
+<p class="muted" id="finderNote" hidden></p>
+<p class="finder-urgent" id="finderUrgent" hidden data-i18n="finder.urgent">জরুরি! সরাসরি Emergency তে আসুন।</p>
+</div>
+<p class="finder-disclaimer" data-i18n="finder.disclaimer">এটি রোগের নির্ণয় নয় — শুধু কোন বিভাগে যেতে হবে তার ধারণা। জরুরি সমস্যা হলে সরাসরি Emergency তে আসুন।</p>
+<script>
+(function(){
+  var chips=document.querySelectorAll('#finderChips .chip');
+  var result=document.getElementById('finderResult');
+  var deptEl=document.getElementById('finderDept');
+  var docEl=document.getElementById('finderDoc');
+  var noteEl=document.getElementById('finderNote');
+  var urgentEl=document.getElementById('finderUrgent');
+  var selected=null;
+  function t(k){return window.GSVMCH_I18N?window.GSVMCH_I18N.t(k):k;}
+  /* General guidance only — NEVER a diagnosis. Doctors shown only where known. */
+  var MAP={
+    pet:{dept:'Medicine',note:'finder.note_pet'},
+    dizzy:{dept:'Medicine'},
+    eye:{dept:'Eye',doc:'Dr Gour Gopal Saha',desig:'appt.desig_gour'},
+    chest:{dept:'Emergency',urgent:true},
+    fever:{dept:'Medicine'},
+    skin:{dept:'Skin'},
+    ear:{dept:'ENT'},
+    bone:{dept:'Orthopedics'},
+    child:{dept:'Pediatric'},
+    preg:{dept:'Gyne and Obs'},
+    mind:{dept:'Psychiatry'},
+    urine:{dept:'Medicine',doc:'Dr Masrura Jabin',desig:'finder.desig_masrura_neph'}
+  };
+  function render(){
+    if(!selected)return;
+    var m=MAP[selected];
+    deptEl.textContent=t('dept.'+m.dept);
+    deptEl.href=(m.dept==='Emergency')?'pages/department-emergency.html':'pages/departments.html';
+    if(m.doc){docEl.textContent=m.doc+' — '+t(m.desig);}
+    else{docEl.textContent=t('finder.doc_tba');}
+    if(m.note){noteEl.textContent=t(m.note);noteEl.hidden=false;}
+    else{noteEl.textContent='';noteEl.hidden=true;}
+    urgentEl.hidden=!m.urgent;
+    result.hidden=false;
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      chips.forEach(function(x){x.classList.remove('active');});
+      c.classList.add('active');
+      selected=c.getAttribute('data-sym');
+      render();
+    });
+  });
+  document.addEventListener('gsvmch-lang',render);
+})();
+</script>
+</section>
 
 <section class="stats-band"><div class="stats-band-inner">
 <div class="stat"><b>250+</b><span data-i18n="stat.beds">শয্যা</span></div>
@@ -85,40 +146,108 @@
 
 <section id="about"><div class="about-wrap">
 <img class="about-photo" src="assets/entrance-about.jpg" alt="গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতালের প্রবেশদ্বারের সাইনবোর্ড — ২৪ ঘণ্টা খোলা, মির্জানগর, সাভার, ঢাকা-১৩৪৪">
-<div class="about-text"><p class="eyebrow" data-i18n="about.eyebrow">আমাদের হাসপাতাল সম্পর্কে</p><h2 data-i18n="about.h2">সবার সুস্থতার জন্য আমরা প্রতিশ্রুতিবদ্ধ</h2>
+<div class="about-text"><p class="eyebrow" data-i18n="about.eyebrow">ABOUT OUR HOSPITAL</p><h2 data-i18n="about.h2">সবার সুস্থতার জন্য আমরা প্রতিশ্রুতিবদ্ধ</h2>
 <p data-i18n="about.p1">গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল একটি ২৫০ শয্যার শিক্ষণ হাসপাতাল, ১৯৭২ সালে গণস্বাস্থ্য কেন্দ্রের উদ্যোগে প্রতিষ্ঠিত। এটি সমাজের জন্য মানসম্মত স্বাস্থ্যসেবা ও চিকিৎসা শিক্ষা দেওয়ার বৃহত্তর প্রচেষ্টার অংশ।</p>
 <p data-i18n="about.p2">হাসপাতালের ইতিহাস গণস্বাস্থ্য কেন্দ্রের (জিকে) সঙ্গে জড়িত। ১৯৭১ সালে মেলাঘর, ত্রিপুরায় ৪৮০ শয্যার বাংলাদেশ ফিল্ড হাসপাতাল পরিচালিত হয়েছিল। ১৯৭২ সালে সাভারে গণস্বাস্থ্য কেন্দ্র আসে এবং সাভার হাসপাতাল জিকের কমিউনিটি-ভিত্তিক স্বাস্থ্যসেবার রেফারেল হাসপাতাল হিসেবে কাজ করে।</p>
-<p data-i18n="about.zaf_p1">ডা. জাফরুল্লাহ চৌধুরী (২৭ ডিসেম্বর ১৯৪১ – ১১ এপ্রিল ২০২৩) ছিলেন গণস্বাস্থ্য কেন্দ্রের প্রতিষ্ঠাতা এবং বাংলাদেশের জনস্বাস্থ্য আন্দোলনের অগ্রদূত। ১৯৭১ সালে মুক্তিযুদ্ধের সময় তিনি ও তাঁর সহকর্মীরা ত্রিপুরার মেলাঘরে ৪৮০ শয্যার বাংলাদেশ ফিল্ড হাসপাতাল পরিচালনা করেন, যেখানে আহত মুক্তিযোদ্ধাদের চিকিৎসা দেওয়া হয়। ১৯৭২ সালে তিনি সাভারে গণস্বাস্থ্য কেন্দ্র প্রতিষ্ঠা করেন — সাধারণ ও দরিদ্র মানুষের জন্য সহজলভ্য স্বাস্থ্যসেবা দেওয়াই ছিল তাঁর জীবনের লক্ষ্য, তাই তাঁকে ‘গরিব মানুষের ডাক্তার’ বলা হতো। ১৯৮২ সালে বাংলাদেশের জাতীয় ওষুধ নীতি প্রণয়নেও তাঁর গুরুত্বপূর্ণ ভূমিকা ছিল।</p>
-<p><a class="btn" href="pages/about.html" data-i18n="about.more">আরও পড়ুন →</a></p></div>
+<p class="about-actions"><a class="btn" href="pages/about.html" data-i18n="about.history_btn">আমাদের ইতিহাস জানুন →</a></p></div>
 </div>
 <div class="founder-strip">
 <img src="assets/zafrullah.jpg" alt="ডা. জাফরুল্লাহ চৌধুরী — গণস্বাস্থ্য কেন্দ্রের প্রতিষ্ঠাতা">
 <div><h3 data-i18n="about.zaf_name">ডা. জাফরুল্লাহ চৌধুরী</h3>
-<p data-i18n="about.zaf_intro">গণস্বাস্থ্য কেন্দ্রের প্রতিষ্ঠাতা, বাংলাদেশের জনস্বাস্থ্য আন্দোলনের অগ্রদূত</p>
-<p><a href="pages/about.html" data-i18n="about.more">আরও পড়ুন →</a></p></div>
+<p class="founder-role" data-i18n="about.zaf_intro">গণস্বাস্থ্য কেন্দ্রের প্রতিষ্ঠাতা, বাংলাদেশের জনস্বাস্থ্য আন্দোলনের অগ্রদূত</p>
+<p class="founder-bio" data-i18n="about.zaf_short">১৯৭১ সালে মুক্তিযুদ্ধের সময় তিনি ও তাঁর সহকর্মীরা ত্রিপুরার মেলাঘরে ৪৮০ শয্যার বাংলাদেশ ফিল্ড হাসপাতাল পরিচালনা করেন; ১৯৭২ সালে সাভারে গণস্বাস্থ্য কেন্দ্র প্রতিষ্ঠা করেন।</p>
+<p><a href="pages/about.html" data-i18n="about.zaf_more">আরও জানুন →</a></p></div>
 </div>
 </section>
 
-<section id="appointment"><h2 data-i18n="appt.h2">অনলাইন অ্যাপয়েন্টমেন্ট বুকিং — অ্যাপয়েন্টমেন্টের অনুরোধ</h2>
+<section id="appointment"><h2 data-i18n="appt.h2">অনলাইন অ্যাপয়েন্টমেন্ট বুকিং</h2>
+<p class="muted appt-sub" data-i18n="appt.sub">আপনার প্রয়োজন অনুযায়ী চিকিৎসক নির্বাচন করে অ্যাপয়েন্টমেন্টের অনুরোধ পাঠান।</p>
 <p data-i18n-html="appt.steps">ধাপ: <b>বিভাগ → তারিখ → অনুরোধ → অফিস থেকে নিশ্চিতকরণ</b>। অনুরোধ করলেই অ্যাপয়েন্টমেন্ট নিশ্চিত হয় না।</p>
 <div class="notice-box" data-i18n-html="appt.note"><b>অ্যাপয়েন্টমেন্টের অনুরোধ</b> — এই ফরমটি অনুরোধ হিসেবে জমা হবে, হাসপাতালের অফিস তা নিশ্চিত করবে। অনুরোধ করলেই অ্যাপয়েন্টমেন্ট নিশ্চিত হয় না। অনলাইন বুকিং, রেফারেন্স নম্বর ও এসএমএস এখনো চালু হয়নি।</div>
-<form id="apptForm" class="form-grid">
-<label><span data-i18n="appt.dept_label">বিভাগ</span><select required><option value="" data-i18n="appt.choose_dept">বিভাগ বাছুন</option><option data-dept="Emergency">Emergency</option><option data-dept="Surgery">Surgery</option><option data-dept="Medicine">Medicine</option><option data-dept="Gyne and Obs">Gyne and Obs</option><option data-dept="Paediatric Surgery">Paediatric Surgery</option><option data-dept="Pediatric">Pediatric</option><option data-dept="ENT">ENT</option><option data-dept="Skin">Skin</option><option data-dept="Eye">Eye</option><option data-dept="Orthopedics">Orthopedics</option><option data-dept="Anesthesia">Anesthesia</option><option data-dept="Radiology">Radiology</option><option data-dept="Psychiatry">Psychiatry</option></select></label>
-<label><span data-i18n="appt.doctor_label">চিকিৎসক</span><select><option data-i18n="appt.doctor_ph">চিকিৎসকের তালিকা আসার পর এখানে বসবে</option></select></label>
-<label><span data-i18n="appt.date_label">তারিখ</span><input type="date" required></label>
-<label><span data-i18n="appt.name_label">রোগীর নাম</span><input data-i18n-ph="appt.name_label" placeholder="রোগীর নাম" required></label>
-<label><span data-i18n="appt.mobile_label">মোবাইল নম্বর</span><input data-i18n-ph="appt.mobile_label" placeholder="মোবাইল নম্বর" required></label>
-<label><span data-i18n="appt.reason_label">কারণ (ঐচ্ছিক)</span><textarea rows="2" data-i18n-ph="appt.reason_ph" placeholder="সমস্যা বা কারণ লিখুন"></textarea></label>
-<button class="btn" type="submit" data-i18n="appt.submit">অনুরোধ পাঠান</button>
-<p id="apptResult" class="muted"></p>
+<form id="apptForm" class="form-grid" novalidate>
+<div class="form-field"><label for="apptDept"><span data-i18n="appt.dept_label">বিভাগ</span><select id="apptDept" required><option value="" data-i18n="appt.choose_dept">বিভাগ বাছুন</option><option data-dept="Emergency">Emergency</option><option data-dept="Surgery">Surgery</option><option data-dept="Medicine">Medicine</option><option data-dept="Gyne and Obs">Gyne and Obs</option><option data-dept="Paediatric Surgery">Paediatric Surgery</option><option data-dept="Pediatric">Pediatric</option><option data-dept="ENT">ENT</option><option data-dept="Skin">Skin</option><option data-dept="Eye">Eye</option><option data-dept="Orthopedics">Orthopedics</option><option data-dept="Anesthesia">Anesthesia</option><option data-dept="Radiology">Radiology</option><option data-dept="Psychiatry">Psychiatry</option></select></label><span class="field-err" id="err-dept"></span></div>
+<div class="form-field"><label for="apptDoctor"><span data-i18n="appt.doctor_label">চিকিৎসক</span><select id="apptDoctor"><option value="" data-i18n="appt.doctor_ph">চিকিৎসকের তালিকা আসার পর এখানে বসবে</option></select></label><p class="doc-desig" id="docDesig" hidden></p><span class="field-err" id="err-doctor"></span></div>
+<div class="form-field"><label for="apptDate"><span data-i18n="appt.date_label">তারিখ</span><input id="apptDate" type="date" required></label><span class="field-err" id="err-date"></span></div>
+<div class="form-field"><label for="apptName"><span data-i18n="appt.name_label">রোগীর নাম</span><input id="apptName" data-i18n-ph="appt.name_label" placeholder="রোগীর নাম" required></label><span class="field-err" id="err-name"></span></div>
+<div class="form-field"><label for="apptMobile"><span data-i18n="appt.mobile_label">মোবাইল নম্বর</span><input id="apptMobile" type="tel" inputmode="numeric" autocomplete="tel" data-i18n-ph="appt.mobile_label" placeholder="মোবাইল নম্বর" required></label><span class="field-err" id="err-mobile"></span></div>
+<div class="form-field"><label for="apptReason"><span data-i18n="appt.reason_label">কারণ (ঐচ্ছিক)</span><textarea id="apptReason" rows="2" data-i18n-ph="appt.reason_ph" placeholder="সমস্যা বা কারণ লিখুন"></textarea></label></div>
+<button class="btn" type="submit" id="apptSubmit" data-i18n="appt.submit">অনুরোধ পাঠান</button>
+<p id="apptResult" class="muted" role="status"></p>
 </form>
 <script>
-document.getElementById('apptForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  document.getElementById('apptResult').textContent = (window.GSVMCH_I18N ? window.GSVMCH_I18N.t('appt.result') : 'এই ফরমটি এখনো পরীক্ষামূলক কাঠামো — আপনার তথ্য কোথাও পাঠানো হয়নি। অ্যাপয়েন্টমেন্টের জন্য হাসপাতালের অফিসে যোগাযোগ করুন।');
-  this.reset();
-});
+(function(){
+  var form=document.getElementById('apptForm');
+  var dept=document.getElementById('apptDept');
+  var doctor=document.getElementById('apptDoctor');
+  var dateEl=document.getElementById('apptDate');
+  var nameEl=document.getElementById('apptName');
+  var mobile=document.getElementById('apptMobile');
+  var submit=document.getElementById('apptSubmit');
+  var result=document.getElementById('apptResult');
+  var desig=document.getElementById('docDesig');
+  function t(k){return window.GSVMCH_I18N?window.GSVMCH_I18N.t(k):k;}
+  /* ONLY 3 doctors are known so far — no schedules exist, none are shown. */
+  var DOCTORS={
+    'Medicine':[{name:'Dr Masrura Jabin',desigKey:'doc.masrura_desig'}],
+    'Surgery':[{name:'Dr Najibul Islam',desigKey:'appt.desig_najibul'}],
+    'Eye':[{name:'Dr Gour Gopal Saha',desigKey:'appt.desig_gour'}]
+  };
+  function rebuildDoctors(keep){
+    var keepVal=keep?doctor.value:'';
+    doctor.innerHTML='';
+    var list=DOCTORS[dept.value]||[];
+    if(!list.length){
+      var o=document.createElement('option');o.value='';o.textContent=t('appt.doctor_ph');doctor.appendChild(o);
+    }else{
+      var o0=document.createElement('option');o0.value='';o0.textContent=t('appt.choose_doctor');doctor.appendChild(o0);
+      list.forEach(function(d){var o=document.createElement('option');o.value=d.name;o.textContent=d.name;doctor.appendChild(o);});
+    }
+    if(keepVal){doctor.value=keepVal;}
+    showDesig();
+  }
+  function showDesig(){
+    var list=DOCTORS[dept.value]||[];
+    var sel=null;
+    list.forEach(function(d){if(d.name===doctor.value)sel=d;});
+    if(sel){desig.textContent=t(sel.desigKey);desig.hidden=false;}
+    else{desig.textContent='';desig.hidden=true;}
+  }
+  function setErr(id,msg){var e=document.getElementById('err-'+id);if(e){e.textContent=msg||'';e.classList.toggle('show',!!msg);}}
+  function markInvalid(el,id,msg){el.classList.add('invalid');setErr(id,msg);}
+  function clearField(el,id){el.classList.remove('invalid');setErr(id,'');}
+  dept.addEventListener('change',function(){rebuildDoctors(false);clearField(dept,'dept');});
+  doctor.addEventListener('change',showDesig);
+  [dateEl,nameEl,mobile].forEach(function(el){
+    el.addEventListener('input',function(){el.classList.remove('invalid');});
+  });
+  function validMobile(v){v=v.replace(/[\s-]/g,'');return /^01[3-9]\d{8}$/.test(v);}
+  function todayStr(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+  dateEl.min=todayStr();
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    if(!dept.value){markInvalid(dept,'dept',t('appt.err_dept'));ok=false;}
+    if(!dateEl.value){markInvalid(dateEl,'date',t('appt.err_date'));ok=false;}
+    else if(dateEl.value<todayStr()){markInvalid(dateEl,'date',t('appt.err_date_past'));ok=false;}
+    if(!nameEl.value.trim()){markInvalid(nameEl,'name',t('appt.err_name'));ok=false;}
+    if(!validMobile(mobile.value)){markInvalid(mobile,'mobile',t('appt.err_mobile'));ok=false;}
+    if(!ok){result.textContent='';result.className='muted';return;}
+    submit.disabled=true;
+    var orig=submit.textContent;
+    submit.textContent=t('appt.sending');
+    result.textContent='';result.className='muted';
+    setTimeout(function(){
+      submit.disabled=false;submit.textContent=orig;
+      result.textContent=t('appt.success');
+      result.className='form-success';
+      form.reset();rebuildDoctors(false);
+    },900);
+  });
+  document.addEventListener('gsvmch-lang',function(){rebuildDoctors(true);});
+  rebuildDoctors(false);
+})();
 </script>
+<p class="appt-confirm" data-i18n="appt.confirm_note">অনলাইনে অনুরোধ পাঠানো মানেই অ্যাপয়েন্টমেন্ট নিশ্চিত হওয়া নয়। হাসপাতাল কর্তৃপক্ষের নিশ্চিতকরণের পর অ্যাপয়েন্টমেন্ট চূড়ান্ত হবে।</p>
 </section>
 
 <section id="diagnostics"><h2 data-i18n="diag.h2">ডায়াগনস্টিক সেবা — পরীক্ষা-নিরীক্ষা</h2>
@@ -156,38 +285,18 @@ document.getElementById('apptForm').addEventListener('submit', function(e){
 
 <section class="ask-banner"><h2 data-i18n="ask.h2">সেবা খুঁজছেন? আমরা আপনাকে সাহায্য করতে এখানে আছি।</h2><p data-i18n="ask.sub">যেকোনো প্রশ্ন বা তথ্যের জন্য আমাদের সঙ্গে যোগাযোগ করুন।</p><p><a class="btn" href="pages/contact.html" data-i18n="nav.query">জিজ্ঞাসা পাঠান</a></p></section>
 
-<section id="notices"><div class="section-head"><h2 data-i18n="notice.h2">সর্বশেষ নোটিশ ও খবর</h2><p class="muted" data-i18n="notice.sub">আমাদের সর্বশেষ কার্যক্রম সম্পর্কে জানুন</p></div><div class="grid"><article class="card"><ul class="notice-list"><li><b class="notice-date" data-i18n="notice.date1">০৭ অক্টোবর ২০২৬</b><br><b data-i18n="notice.puja_t">শারদীয়া দুর্গাপূজা — সরকারি ছুটি (২০–২২ অক্টোবর ২০২৬)</b><br><span class="muted" data-i18n="notice.puja_p">সরকারি ছুটি ২০–২২ অক্টোবর ২০২৬। জরুরি সেবা ২৪ ঘণ্টা খোলা ছিল।</span></li></ul></article></div><p class="view-all"><a class="btn purple" href="pages/notices.html" data-i18n="notice.all">সব দেখুন →</a></p></section>
 
 <section id="contact-map"><div class="section-head"><h2 data-i18n="map.h2">আমাদের অবস্থান</h2><p class="muted" data-i18n="map.sub">মির্জানগর, সাভার — ঢাকা-আরিচা মহাসড়কের পাশে।</p></div><div class="card"><p class="muted" data-i18n="contact.sub">আমরা আপনাকে সাহায্য করতে এখানে আছি</p>
 <p><span class="inline-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M24 40S12 29.5 12 20a12 12 0 0 1 24 0c0 9.5-12 20-12 20z"/><circle cx="24" cy="20" r="4.5"/></svg></span> মির্জানগর, ভায়া সাভার ক্যান্টনমেন্ট, আশুলিয়া, সাভার, ঢাকা-১৩৪৪<br>
-<span class="inline-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M14 30a10 10 0 0 1 20 0"/><path pathLength="100" d="M10 30h28"/><path pathLength="100" d="M12 36h24"/><path pathLength="100" d="M24 12V9"/><path pathLength="100" d="M15 9.5l2 2"/><path pathLength="100" d="M33 9.5l-2 2"/><circle cx="24" cy="22" r="2.5"/></svg></span> <span data-i18n="contact.emergency">জরুরি: [নিশ্চিত করা হয়নি]</span><br>
-<span class="inline-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="32" height="24" rx="3"/><path pathLength="100" d="M9 14l15 11L39 14"/></svg></span> gsvmchospital@gmail.com<br>
-<span class="inline-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="100" d="M44 33.8v6a4 4 0 0 1-4.4 4 39.6 39.6 0 0 1-17.2-6.2 39 39 0 0 1-12-12A39.6 39.6 0 0 1 4.2 8.4 4 4 0 0 1 8.2 4h6a4 4 0 0 1 4 3.4c.26 1.92.72 3.8 1.4 5.6a4 4 0 0 1-.9 4.2L16.2 19.8a32 32 0 0 0 12 12l2.6-2.6a4 4 0 0 1 4.2-.9c1.8.68 3.68 1.14 5.6 1.4A4 4 0 0 1 44 33.8z"/></svg></span> <span data-i18n="contact.phone">ফোন: ০২৭৭৯২২২৫</span></p>
-<p><a class="btn" href="https://maps.app.goo.gl/LF12YgHGMR2dJApL9?g_st=ac" target="_blank" rel="noopener" data-i18n="contact.map">ম্যাপে দেখুন →</a></p></div><div class="map-wrap"><iframe title="Gonoshasthaya Samaj Vittik Medical College Hospital — map" src="https://www.google.com/maps?q=23.9181063,90.2448847&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section>
+<span class="inline-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="12" width="32" height="24" rx="3"/><path pathLength="100" d="M9 14l15 11L39 14"/></svg></span> gsvmchospital@gmail.com</p>
+<p><a class="btn" href="https://maps.app.goo.gl/K6L8C1ifTMdegaQb9?g_st=ac" target="_blank" rel="noopener" data-i18n="contact.map">ম্যাপে দেখুন →</a></p></div><div class="map-wrap"><iframe title="Gonoshasthaya Samaj Vittik Medical College Hospital — map" src="https://www.google.com/maps?q=Gonoshasthaya+Samaj+Vittik+Medical+College&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section>
 
 </main>
 <footer class="site"><div class="footer-inner">
 <div><h3 data-i18n="foot.quick">দ্রুত লিংক</h3><p><a href="index.html" data-i18n="nav.home">হোম</a><br><a href="pages/about.html" data-i18n="nav.about">আমাদের সম্পর্কে</a><br><a href="pages/departments.html" data-i18n="nav.departments">বিভাগসমূহ</a><br><a href="pages/doctors.html" data-i18n="nav.doctors">চিকিৎসকগণ</a><br><a href="pages/contact.html" data-i18n="nav.contact">যোগাযোগ</a></p></div>
 <div><h3 data-i18n="foot.dept_h">বিভাগসমূহ</h3><p><a href="pages/departments.html" data-i18n="spec.emergency">জরুরি চিকিৎসা</a><br><a href="pages/departments.html" data-i18n="spec.surgery">সার্জারি</a><br><a href="pages/departments.html" data-i18n="spec.medicine">মেডিসিন</a><br><a href="pages/departments.html" data-i18n="spec.eye">চক্ষু</a><br><a href="pages/departments.html" data-i18n="spec.psych">মনোরোগ</a></p></div>
-<div><h3 data-i18n="foot.contact_h">যোগাযোগ</h3><p data-i18n-html="foot.addr">মির্জানগর, ভায়া সাভার ক্যান্টনমেন্ট, আশুলিয়া, সাভার, ঢাকা-১৩৪৪<br>২৫০ শয্যার হাসপাতাল, ১৯৭২ সাল থেকে</p><p>gsvmchospital@gmail.com<br><span data-i18n="contact.phone">ফোন: ০২৭৭৯২২২৫</span><br><a href="https://maps.app.goo.gl/LF12YgHGMR2dJApL9?g_st=ac" target="_blank" rel="noopener" data-i18n="contact.map">ম্যাপে দেখুন →</a></p></div>
+<div><h3 data-i18n="foot.contact_h">যোগাযোগ</h3><p data-i18n-html="foot.addr">মির্জানগর, ভায়া সাভার ক্যান্টনমেন্ট, আশুলিয়া, সাভার, ঢাকা-১৩৪৪<br>২৫০ শয্যার হাসপাতাল, ১৯৭২ সাল থেকে</p><p>gsvmchospital@gmail.com<br><a href="https://maps.app.goo.gl/K6L8C1ifTMdegaQb9?g_st=ac" target="_blank" rel="noopener" data-i18n="contact.map">ম্যাপে দেখুন →</a></p></div>
 </div><div class="footer-bottom" data-i18n="foot.copy">© ২০২৬ গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল। সর্বস্বত্ব সংরক্ষিত।</div></footer>
-<script>
-(function(){
-  var slides=document.querySelectorAll('#heroSlider .slide');
-  var dots=document.querySelectorAll('#heroDots .dot');
-  var cur=0, timer=null;
-  function show(i){
-    cur=i;
-    slides.forEach(function(s,k){s.classList.toggle('active',k===i);});
-    dots.forEach(function(d,k){d.classList.toggle('active',k===i);});
-  }
-  function next(){show((cur+1)%slides.length);}
-  dots.forEach(function(d){d.addEventListener('click',function(){show(parseInt(d.dataset.slide,10));restart();});});
-  document.querySelectorAll('.hero-arrow').forEach(function(b){b.addEventListener('click',function(){show((cur+parseInt(b.dataset.nav,10)+slides.length)%slides.length);restart();});});
-  function restart(){if(timer)clearInterval(timer);timer=setInterval(next,6000);}
-  restart();
-})();
-</script>
 <script src="assets/lang.js"></script>
 <script src="assets/animate.js"></script>
 </body></html>
