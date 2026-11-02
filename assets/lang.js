@@ -12,6 +12,7 @@
     /* ---- shared chrome ---- */
     'brand.name': { bn: 'গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল', en: 'Gonoshasthaya Samaj Vittik Medical College Hospital' },
     'brand.sub': { bn: 'জিএসভিএমসিএইচ — সাভার, ঢাকা', en: 'GSVMCH — Savar, Dhaka' },
+    'brand.tag': { bn: 'সহানুভূতির সঙ্গে মানসম্মত স্বাস্থ্যসেবা', en: 'Quality Healthcare with Compassion' },
     'top.addr': { bn: 'মির্জানগর, আশুলিয়া, সাভার, ঢাকা-১৩৪৪', en: 'Mirzanagar, Ashulia, Savar, Dhaka-1344' },
     'top.emergency': { bn: 'জরুরি: [নিশ্চিত করা হয়নি]', en: 'Emergency: [To be confirmed]' },
     'top.notice': { bn: 'নোটিশ', en: 'Notice' },
@@ -298,7 +299,18 @@
     'gallery.h2': { bn: 'গ্যালারি', en: 'Gallery' },
     'gallery.cap': { bn: 'হাসপাতাল ভবন, সাভার', en: 'Hospital building, Savar' },
     'gallery.t1': { bn: 'শীঘ্রই আসছে<br>সেবা এলাকা', en: 'Coming soon<br>Care area' },
-    'gallery.t2': { bn: 'শীঘ্রই আসছে<br>কমিউনিটি', en: 'Coming soon<br>Community' }
+    'gallery.t2': { bn: 'শীঘ্রই আসছে<br>কমিউনিটি', en: 'Coming soon<br>Community' },
+    /* ---- v8 premium-style homepage ---- */
+    'nav.query': { bn: 'জিজ্ঞাসা পাঠান', en: 'Send Query' },
+    'sc.doctor_h': { bn: 'চিকিৎসক খুঁজুন', en: 'Find a Doctor' },
+    'sc.doctor_p': { bn: 'আমাদের চিকিৎসকদের খুঁজুন', en: 'Find Our Doctors' },
+    'why.h2': { bn: 'কেন গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল', en: 'Why Choose GSVMCH' },
+    'why.p': { bn: 'গণস্বাস্থ্য সমাজ ভিত্তিক মেডিকেল কলেজ হাসপাতাল একটি ২৫০ শয্যার শিক্ষণ হাসপাতাল, ১৯৭২ সালে গণস্বাস্থ্য কেন্দ্রের উদ্যোগে প্রতিষ্ঠিত। সাধারণ মানুষের জন্য সহজলভ্য ও মানসম্মত স্বাস্থ্যসেবা দেওয়াই আমাদের লক্ষ্য।', en: 'Gonoshasthaya Samaj Vittik Medical College Hospital is a 250-bed teaching hospital, founded in 1972 on the initiative of Gonoshasthaya Kendra. Our goal is affordable, quality healthcare for ordinary people.' },
+    'ask.h2': { bn: 'সেবা খুঁজছেন? আমরা আপনাকে সাহায্য করতে এখানে আছি।', en: 'Looking for care? We are here to support you.' },
+    'ask.sub': { bn: 'যেকোনো প্রশ্ন বা তথ্যের জন্য আমাদের সঙ্গে যোগাযোগ করুন।', en: 'Contact us for any question or information.' },
+    'map.h2': { bn: 'আমাদের অবস্থান', en: 'Our Location' },
+    'map.sub': { bn: 'মির্জানগর, সাভার — ঢাকা-আরিচা মহাসড়কের পাশে।', en: 'Mirzanagar, Savar — beside the Dhaka–Aricha highway.' },
+    'foot.dept_h': { bn: 'বিভাগসমূহ', en: 'Departments' },
   };
 
   var KEY = 'gsvmch-lang';

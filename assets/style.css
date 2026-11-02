@@ -203,3 +203,56 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
 .card figure{margin:1rem 0 0}
 .card figure img{width:100%;border-radius:12px}
 .card figcaption{font-size:.92rem;color:var(--muted);margin-top:.4rem}
+
+
+/* ---- v8 premium-style homepage (layout pattern only, GSVMCH content) ---- */
+/* Header Send Query button */
+.btn.query{background:var(--navy);padding:.55rem 1rem}
+.btn.query:hover{background:#0d2c45}
+/* Hero prev/next round white arrows */
+.hero-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:6;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--navy);border:0;font-size:1.7rem;line-height:1;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.28);pointer-events:auto}
+.hero-arrow.prev{left:1rem}
+.hero-arrow.next{right:1rem}
+.hero-arrow:hover{background:var(--soft)}
+/* Five quick-action cards overlapping the hero bottom */
+.shortcuts{grid-template-columns:repeat(5,1fr);margin-top:-3rem;position:relative;z-index:5}
+.shortcut h3{text-transform:uppercase;letter-spacing:.03em;font-size:1rem}
+/* Why Choose — centred intro */
+.why-choose .section-head p{max-width:760px;margin:.6rem auto 0}
+/* Specialities: photo left + tile grid right */
+.spec-layout{display:grid;grid-template-columns:300px 1fr;gap:1.4rem;align-items:stretch}
+.spec-photo{width:100%;height:100%;min-height:320px;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+.spec-layout .spec-grid{grid-template-columns:repeat(4,1fr)}
+/* Purple View All button (premium pattern) */
+.btn.purple{background:#7c3aed}
+.btn.purple:hover{background:#6a2fd4}
+.view-all{text-align:right;margin-top:1rem}
+/* Ask GSVMCH banner */
+.ask-banner{background:var(--navy);border-radius:var(--radius);padding:2rem 1.2rem;text-align:center;color:#fff}
+.ask-banner h2{color:#fff;border-bottom:0;padding-bottom:0}
+.ask-banner p{color:#bcd6ea}
+/* Embedded map */
+.map-wrap{margin-top:1rem}
+.map-wrap iframe{width:100%;height:380px;border:0;border-radius:var(--radius);box-shadow:var(--shadow);display:block}
+@media(max-width:860px){
+  .spec-layout{grid-template-columns:1fr}
+  .spec-photo{min-height:220px}
+  .spec-layout .spec-grid{grid-template-columns:repeat(3,1fr)}
+  .shortcuts{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .spec-layout .spec-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-arrow{width:36px;height:36px;font-size:1.4rem}
+  .map-wrap iframe{height:300px}
+}
+
+/* ---- v8 header logo lockup (premium pattern: circular logo + stacked wordmark) ---- */
+.brand img{width:56px;height:56px}
+.brand .wordmark{display:flex;flex-direction:column;line-height:1.22}
+.brand b{font-size:1.12rem;letter-spacing:-.01em}
+.brand small{font-size:.88rem}
+.brand .tagline{color:var(--teal);font-weight:700;font-size:.8rem;letter-spacing:.02em}
+@media(max-width:560px){
+  .brand img{width:48px;height:48px}
+  .brand b{font-size:.95rem}
+}
