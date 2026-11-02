@@ -36,7 +36,7 @@
   /* ---------- Scroll reveal ---------- */
   var SELECTOR = 'main section, .card, .shortcut, .spec-card, ' +
     '.gallery figure, .founder-strip, .stats-band, .notice-box, ' +
-    '.about-wrap > *, .bottom3 > *, form, .table-wrap, .empty';
+    '.about-wrap > *, .bottom3 > *, form, .table-wrap, .empty, .cta-btn, .chip, .finder-result';
   var revealEls = Array.prototype.slice.call(document.querySelectorAll(SELECTOR));
 
   revealEls.forEach(function (el, i) {

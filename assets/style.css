@@ -133,7 +133,7 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
   .brand b{font-size:.9rem}
   .brand img{width:44px;height:44px}
   .spec-icon,.dept-icon{width:64px;height:64px}
-  .spec-icon img,.dept-icon img{width:64px;height:64px}
+  .spec-icon svg,.dept-icon svg{width:34px;height:34px}
   h1{font-size:1.6rem}
 }
 
@@ -159,13 +159,12 @@ footer.site{background:var(--navy);color:#dbe7f2;margin-top:3rem}
 .stats-box .stat span,.stats-band .stat span{font-size:.92rem;color:var(--muted);font-weight:600}
 .spec-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:.9rem}
 .spec-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem .6rem;text-align:center;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
-.spec-card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(18,59,93,.12)}
+.spec-card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(18,59,93,.14)}
 .spec-card h3{font-size:.98rem;margin:.4rem 0 0}
 .shortcut .icon{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#eaf3fb,#d9f2f0);color:var(--blue);flex:none;transition:background .25s,color .25s,box-shadow .25s}
 .shortcut .icon svg{width:32px;height:32px}
-/* Premium PNG dept icons: no circular badge — the PNGs carry their own soft-blue glow */
-.spec-icon,.dept-icon{display:inline-flex;align-items:center;justify-content:center;width:76px;height:76px;flex:none}
-.spec-icon img,.dept-icon img{width:76px;height:76px;object-fit:contain;transition:transform .25s ease,filter .25s ease}
+/* Premium SVG dept icons: soft-blue circular badge (Lucide-style stroke icons) */
+.spec-icon svg,.dept-icon svg{width:34px;height:34px}
 .dept-icon{margin-bottom:.35rem}
 .inline-icon{display:inline-flex;vertical-align:-3px;color:var(--blue)}
 .inline-icon svg{width:18px;height:18px}
@@ -299,3 +298,66 @@ input[type="date"]::-webkit-calendar-picker-indicator{cursor:pointer}
   /* Founder strip stacks only when very narrow */
   .founder-strip{flex-direction:column;align-items:flex-start}
 }
+
+/* ---- Premium redesign 2026-11-02 (Specialties / About / Founder / Appointment) ---- */
+/* Clickable specialty cards */
+a.spec-card{display:block;color:var(--ink)}
+a.spec-card:hover{text-decoration:none}
+a.spec-card h3{font-size:1.02rem;line-height:1.45}
+.spec-card .spec-icon{margin-bottom:.15rem}
+/* Departments page cards */
+a.card.dept-link{display:block;color:var(--ink)}
+a.card.dept-link:hover{text-decoration:none}
+/* About: history button row */
+.about-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+/* Founder: elegant horizontal profile card */
+.founder-strip{background:#eaf3fb;border:1px solid #cfe3f2;border-left:4px solid var(--teal);padding:1.3rem 1.4rem}
+.founder-strip img{width:112px;height:130px;border-radius:14px}
+.founder-strip h3{font-size:1.3rem}
+.founder-strip .founder-role{font-weight:700;color:var(--blue)}
+.founder-strip .founder-bio{color:var(--muted);font-size:.95rem}
+.founder-strip a{font-weight:700}
+/* Appointment: premium form */
+.appt-sub{max-width:640px}
+.form-field{display:grid;gap:.3rem;align-content:start}
+.field-err{display:none;color:#c0392b;font-size:.88rem;font-weight:600}
+.field-err.show{display:block}
+input.invalid,select.invalid,textarea.invalid{border-color:#dc3545}
+input.invalid:focus,select.invalid:focus,textarea.invalid:focus{outline-color:#dc3545}
+.doc-desig{margin:0;font-size:.9rem;font-weight:600;color:var(--blue)}
+.form-success{background:#e6f7ee;border:1px solid #9fd8b4;color:#1d6b3c;border-radius:12px;padding:.9rem 1.1rem;font-weight:600}
+.appt-confirm{margin-top:1rem;background:var(--soft);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:.9rem 1.1rem}
+#apptSubmit:disabled{opacity:.65;cursor:wait;transform:none}
+@media(max-width:560px){
+  .dept-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ---- Identity-first update 2026-11-02 (first screen + symptom finder) ---- */
+.first-screen{margin-top:0;border-radius:var(--radius);overflow:hidden;position:relative;background:var(--navy)}
+.first-screen-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.first-screen-overlay{position:relative;background:linear-gradient(180deg,rgba(18,59,93,.82) 0%,rgba(18,59,93,.68) 55%,rgba(18,59,93,.85) 100%);padding:2.2rem 1.4rem}
+.first-screen-inner{max-width:920px;margin:0 auto;text-align:center}
+.first-screen-eyebrow{color:#9fd8f0;font-weight:700;letter-spacing:.03em;margin:0 0 .4rem}
+.first-screen h1{color:#fff;font-size:2rem;margin:.2rem 0 .5rem;border-bottom:0;padding-bottom:0}
+.first-screen-sub{color:#eaf3fb;max-width:640px;margin:0 auto 1.6rem}
+.cta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.cta-btn{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem .8rem;display:flex;flex-direction:column;align-items:center;gap:.35rem;box-shadow:0 4px 16px rgba(0,0,0,.18);transition:transform .2s,box-shadow .2s;color:var(--ink);min-height:170px;justify-content:center}
+.cta-btn:hover{text-decoration:none;transform:translateY(-4px);box-shadow:0 12px 26px rgba(0,0,0,.25)}
+.cta-btn b{color:var(--navy);font-size:1.08rem}
+.cta-btn span{color:var(--muted);font-size:.9rem}
+.cta-icon{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#eaf3fb,#d9f2f0);color:var(--blue)}
+.cta-icon svg{width:32px;height:32px}
+.cta-btn.emergency{border-top:4px solid #dc3545}
+.cta-btn.emergency .cta-icon{color:#dc3545;background:#fdecec}
+.cta-btn.emergency b{color:#dc3545}
+@media(max-width:860px){.cta-grid{grid-template-columns:repeat(2,1fr)}.first-screen h1{font-size:1.6rem}}
+@media(max-width:560px){.first-screen-overlay{padding:1.6rem 1rem}.cta-btn{min-height:150px;padding:1rem .6rem}}
+/* Symptom finder */
+.chip-wrap{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+.chip{background:#fff;border:1.5px solid var(--blue);color:var(--navy);border-radius:999px;padding:.6rem 1.15rem;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;transition:background .15s,color .15s}
+.chip:hover{background:var(--soft)}
+.chip.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.finder-result{background:var(--soft);border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:var(--radius);padding:1.1rem 1.3rem;margin-top:1.2rem}
+.finder-result p{margin:.3rem 0}
+.finder-urgent{background:#fdecec;border:1px solid #f0b4b4;color:#a8232a;border-radius:10px;padding:.7rem 1rem;font-weight:700;margin-top:.6rem}
+.finder-disclaimer{color:var(--muted);font-size:.92rem;text-align:center;margin-top:1rem}
